@@ -4,100 +4,172 @@ body {
   padding: 0;
   background-color: #121212;
   height: 200vh;
+  user-select: none;
 }
 
 /*--p5 sketch----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--landing page----------------------------------------------------------------------------------------------------------------------------------------*/
 
-#nome {
+#about {
+  position: absolute;
+  text-align: center;
+  top: 28vh;
+  left: 9vw;
+  width: 4vw;
   color: white;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+#about:hover {
+  background-color: rebeccapurple;
+  color: #121212;
+}
+
+#insta {
+  position: absolute;
+  text-align: center;
+  top: 28vh;
+  right: 9vw;
+  width: 1.5vw;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+#insta:hover {
+  background-color: rebeccapurple;
+  color: #121212;
+}
+
+#git {
+  position: absolute;
+  text-align: center;
+  top: 28vh;
+  right: 11vw;
+  width: 2vw;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+#git:hover {
+  background-color: rebeccapurple;
+  color: #121212;
+}
+
+#nome {
+  color: #121212;
+  background-color: rebeccapurple;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   font-size: 10vw;
   position: absolute;
   text-align: center;
-  width: 84vw;
-  left: 8vw;
-  top: 30vh;
+  width: 82vw;
+  left: 9vw;
+  top: 32vh;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 #info1 {
   color: white;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 2.5vw;
   position: absolute;
-  left: 8vw;
-  width: 32vw;
-  top: 55vh;
+  left: 9vw;
+  width: 34vw;
+  top: 55.6vh;
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 #info2 {
   color: white;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 2.5vw;
   position: absolute;
   text-align: right;
-  right: 8.5vw;
-  width: 27vw;
-  top: 65vh;
+  right: 9vw;
+  width: 25vw;
+  top: 65.6vh;
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 #info3 {
   color: white;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 2.5vw;
   position: absolute;
-  left: 8vw;
-  width: 32.5vw;
-  top: 75vh;
+  left: 9vw;
+  width: 20vw;
+  top: 75.6vh;
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 #gif1 {
+  border: solid 3px rebeccapurple;
   background-color: grey;
   border-radius: 2.8vw;
   position: absolute;
-  right: 8vw;
-  width: 50vw;
-  height: 2.8vw;
+  right: 9vw;
+  width: 47vw;
+  height: 3vw;
   top: 55.5vh;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
 
 #gif1:hover {
-  top: 52.7vh;
-  height: 5.6vw;
+  top: 48.5vh;
+  height: 10vw;
 }
 
 #gif2 {
+  border: solid 3px rebeccapurple;
   background-color: grey;
   border-radius: 2.8vw;
   position: absolute;
-  left: 8vw;
-  width: 55vw;
-  height: 2.8vw;
+  left: 9vw;
+  width: 56vw;
+  height: 3vw;
   top: 65.5vh;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
 
 #gif2:hover {
-  top: 62.7vh;
-  height: 5.6vw;
+  top: 58.5vh;
+  height: 12vw;
 }
 
 #gif3 {
-  background-image: url(assets/photos/_MG_1877.jpg);
+  border: solid 3px rebeccapurple;
   background-position: center;
   border-radius: 2.8vw;
   position: absolute;
-  right: 8vw;
-  width: 49.5vw;
-  height: 2.8vw;
+  right: 9vw;
+  width: 59vw;
+  height: 3vw;
   top: 75.5vh;
   animation: gif3 60s linear infinite;
   transition-timing-function: ease-in-out;
@@ -105,79 +177,79 @@ body {
 }
 
 #gif3:hover {
-  top: 72.7vh;
-  height: 5.6vw;
+  top: 68.5vh;
+  height: 12vw;
 }
 
 @keyframes gif3 {
   0% {
     background-image: url(assets/photos/_MG_1877.jpg);
-    background-position: 0% 30%;
+    background-position: 0% 20%;
     background-size: 100%;
   }
   8% {
     background-image: url(assets/photos/_MG_3276.jpg);
-    background-position: 0% 35%;
+    background-position: 0% 25%;
     background-size: 100%;
   }
   16% {
     background-image: url(assets/photos/_MG_3499.jpg);
-    background-position: 0% 40%;
+    background-position: 0% 30%;
     background-size: 100%;
   }
   24% {
     background-image: url(assets/photos/_MG_5124.jpg);
-    background-position: 0% 45%;
+    background-position: 0% 35%;
     background-size: 100%;
   }
   32% {
     background-image: url(assets/photos/_MG_5505.jpg);
-    background-position: 0% 50%;
+    background-position: 0% 40%;
     background-size: 100%;
   }
   40% {
     background-image: url(assets/photos/_MG_5558.jpg);
-    background-position: 0% 55%;
+    background-position: 0% 45%;
     background-size: 100%;
   }
   48% {
     background-image: url(assets/photos/_MG_7204.jpg);
-    background-position: 0% 60%;
+    background-position: 0% 50%;
     background-size: 100%;
   }
   56% {
     background-image: url(assets/photos/_MG_7591.jpg);
-    background-position: 0% 65%;
+    background-position: 0% 55%;
     background-size: 100%;
   }
   64% {
     background-image: url(assets/photos/_MG_9304.jpg);
-    background-position: 0% 70%;
+    background-position: 0% 60%;
     background-size: 100%;
   }
   72% {
     background-image: url(assets/photos/_MG_9352.jpg);
-    background-position: 0% 75%;
+    background-position: 0% 65%;
     background-size: 100%;
   }
   80% {
     background-image: url(assets/photos/_MG_9437.jpg);
-    background-position: 0% 80%;
+    background-position: 0% 70%;
     background-size: 100%;
   }
   88% {
     background-image: url(assets/photos/IMG_2811.jpg);
-    background-position: 0% 85%;
+    background-position: 0% 75%;
     background-size: 100%;
   }
   96% {
     background-image: url(assets/photos/IMG_4665-Edit.jpg);
-    background-position: 0% 90%;
+    background-position: 0% 80%;
     background-size: 100%;
   }
   100% {
     background-image: url(assets/photos/Untitled-1.jpg);
-    background-position: 0% 95%;
+    background-position: 0% 85%;
     background-size: 100%;
   }
 }

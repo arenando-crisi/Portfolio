@@ -1,17 +1,19 @@
-let px = 0;
-let py = 0;
+//--scia del mouse----------------------------------------------------------------------------------------------------------------------------------
 
-let ppx = 0;
-let ppy = 0;
+let smpx = 0;
+let smpy = 0;
 
-let pppx = 0;
-let pppy = 0;
+let smppx = 0;
+let smppy = 0;
+
+let smpppx = 0;
+let smpppy = 0;
 
 let cnv;
 
 let sciamouse = function (sm) {
   sm.setup = function () {
-    cnv = sm.createCanvas(sm.windowWidth, sm.windowHeight);
+    cnv = sm.createCanvas(sm.windowWidth, 2 * sm.windowHeight);
     cnv.class("sciamouse");
   };
 
@@ -19,19 +21,19 @@ let sciamouse = function (sm) {
     sm.clear();
     sm.stroke(255);
     sm.strokeWeight(5);
-    sm.line(sm.mouseX, sm.mouseY, px, py);
-    sm.line(ppx, ppy, px, py);
-    sm.line(pppx, pppy, ppx, ppy);
-    pppx = ppx;
-    pppy = ppy;
-    ppx = px;
-    ppy = py;
-    px = sm.mouseX;
-    py = sm.mouseY;
+    sm.line(sm.mouseX, sm.mouseY, smpx, smpy);
+    sm.line(smppx, smppy, smpx, smpy);
+    sm.line(smpppx, smpppy, smppx, smppy);
+    smpppx = smppx;
+    smpppy = smppy;
+    smppx = smpx;
+    smppy = smpy;
+    smpx = sm.mouseX;
+    smpy = sm.mouseY;
   };
 
   sm.windowResized = function () {
-    sm.resizeCanvas(sm.windowWidth, sm.windowHeight);
+    sm.resizeCanvas(sm.windowWidth, 2 * sm.windowHeight);
   };
 };
 
