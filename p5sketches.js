@@ -3,6 +3,9 @@
 let smpx = 0;
 let smpy = 0;
 
+let X;
+let Y;
+
 let smppx = 0;
 let smppy = 0;
 
@@ -10,6 +13,7 @@ let smpppx = 0;
 let smpppy = 0;
 
 let cnv;
+let easing = 2.5;
 
 let sciamouse = function (sm) {
   sm.setup = function () {
@@ -20,8 +24,13 @@ let sciamouse = function (sm) {
   sm.draw = function () {
     sm.clear();
     sm.stroke(255);
-    sm.strokeWeight(5);
-    sm.line(sm.mouseX, sm.mouseY, smpx, smpy);
+    sm.strokeWeight(10);
+    var tX = sm.mouseX;
+    var tY = sm.mouseY;
+    X += (tX - X) * easing;
+    Y += (tY - Y) * easing;
+
+    sm.line(X, Y, smpx, smpy);
     sm.line(smppx, smppy, smpx, smpy);
     sm.line(smpppx, smpppy, smppx, smppy);
     smpppx = smppx;

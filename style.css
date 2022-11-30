@@ -5,6 +5,14 @@ body {
   background-color: #121212;
   height: 200vh;
   user-select: none;
+  opacity: 1;
+}
+
+.triggers {
+  width: 100vw;
+  position: absolute;
+  background-color: aqua;
+  opacity: 0.1;
 }
 
 /*--p5 sketch----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -42,6 +50,7 @@ body {
   font-size: 1vw;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
+  text-decoration: none;
 }
 
 #insta:hover {
@@ -61,6 +70,7 @@ body {
   font-size: 1vw;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
+  text-decoration: none;
 }
 
 #git:hover {
@@ -129,12 +139,14 @@ body {
 #gif1 {
   border: solid 3px rebeccapurple;
   background-color: grey;
+  background-position: center;
   border-radius: 2.8vw;
   position: absolute;
   right: 9vw;
   width: 47vw;
   height: 3vw;
   top: 55.5vh;
+  animation: gif1 40s infinite;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
@@ -142,6 +154,44 @@ body {
 #gif1:hover {
   top: 48.5vh;
   height: 10vw;
+}
+
+@keyframes gif1 {
+  0% {
+    background-image: url(assets/projects/gif1.png);
+    background-position: 0% 10%;
+    background-size: 100%;
+  }
+  16% {
+    background-image: url(assets/projects/gif3.png);
+    background-position: 0% 20%;
+    background-size: 100%;
+  }
+  32% {
+    background-image: url(assets/projects/gif4.png);
+    background-position: 0% 30%;
+    background-size: 100%;
+  }
+  48% {
+    background-image: url(assets/projects/gif5.png);
+    background-position: 0% 40%;
+    background-size: 100%;
+  }
+  64% {
+    background-image: url(assets/projects/gif6.png);
+    background-position: 0% 50%;
+    background-size: 100%;
+  }
+  80% {
+    background-image: url(assets/projects/gif7.png);
+    background-position: 0% 60%;
+    background-size: 100%;
+  }
+  100% {
+    background-image: url(assets/projects/gif2.png);
+    background-position: 0% 70%;
+    background-size: 100%;
+  }
 }
 
 #gif2 {
@@ -171,7 +221,7 @@ body {
   width: 59vw;
   height: 3vw;
   top: 75.5vh;
-  animation: gif3 60s linear infinite;
+  animation: gif3 60s infinite;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
@@ -252,4 +302,10 @@ body {
     background-position: 0% 85%;
     background-size: 100%;
   }
+}
+
+/*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#tdescom {
+  top: 90vh;
 }
