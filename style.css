@@ -6,6 +6,7 @@ body {
   height: 200vh;
   user-select: none;
   opacity: 1;
+  overscroll-behavior-y: none;
 }
 
 .triggers {
@@ -31,6 +32,7 @@ body {
   font-size: 1vw;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
+  text-decoration: none;
 }
 
 #about:hover {
@@ -137,21 +139,21 @@ body {
 }
 
 #gif1 {
-  border: solid 3px rebeccapurple;
+  border: solid 3px #121212;
   background-color: grey;
   background-position: center;
-  border-radius: 2.8vw;
   position: absolute;
   right: 9vw;
   width: 47vw;
   height: 3vw;
   top: 55.5vh;
-  animation: gif1 40s infinite;
+  animation: gif1 40s infinite linear;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
 
 #gif1:hover {
+  border: solid 3px rebeccapurple;
   top: 48.5vh;
   height: 10vw;
 }
@@ -195,9 +197,8 @@ body {
 }
 
 #gif2 {
-  border: solid 3px rebeccapurple;
+  border: solid 3px #121212;
   background-color: grey;
-  border-radius: 2.8vw;
   position: absolute;
   left: 9vw;
   width: 56vw;
@@ -208,25 +209,26 @@ body {
 }
 
 #gif2:hover {
+  border: solid 3px rebeccapurple;
   top: 58.5vh;
   height: 12vw;
 }
 
 #gif3 {
-  border: solid 3px rebeccapurple;
+  border: solid 3px #121212;
   background-position: center;
-  border-radius: 2.8vw;
   position: absolute;
   right: 9vw;
   width: 59vw;
   height: 3vw;
   top: 75.5vh;
-  animation: gif3 60s infinite;
+  animation: gif3 60s infinite linear;
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
 
 #gif3:hover {
+  border: solid 3px rebeccapurple;
   top: 68.5vh;
   height: 12vw;
 }
@@ -304,8 +306,152 @@ body {
   }
 }
 
+/*--des com----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#containerdescom {
+  opacity: 0;
+  position: absolute;
+  width: 82vw;
+  left: 9vw;
+  height: 75vh;
+  top: 65.5vh;
+  display: none;
+  transition-duration: 0.5s;
+}
+
+#pivo {
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 70%;
+  transition-duration: 0.5s;
+}
+
+#pivoexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+
+#pivomin {
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 0;
+}
+
+#slideshowpivo {
+  background-color: rebeccapurple;
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+}
+
+#testipivo {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titolopivo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+#testopivo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#datapivo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+}
+
+#liw {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
+#tarzan {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
+#fronzoni {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
+#boccioni {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
+#lineo {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
+#mdb {
+  position: relative;
+  border: solid 3px rebeccapurple;
+  background-color: #121212;
+  width: 100%;
+  height: 5%;
+  transition-duration: 0.5s;
+}
+
 /*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #tdescom {
   top: 90vh;
+}
+
+/*--page positioners----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#pdescom {
+  top: 50vh;
 }

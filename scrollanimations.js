@@ -1,109 +1,72 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#gif1", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#gif2", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#gif3", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#info2", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#info3", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#nome", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#about", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#insta", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
-
-gsap.to("#git", {
-  scrollTrigger: {
-    trigger: "#tdescom",
-    start: "top center",
-    end: "bottom center",
-    //markers: "true",
-    toggleActions: "play none reverse none",
-  },
-  opacity: 0,
-  y: -1000,
-});
+let tdescom = gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#tdescom",
+      start: "top center",
+      end: "bottom center",
+      //markers: "true",
+      toggleActions: "play none reverse none",
+    },
+  })
+  .to("#gif1", 0, {
+    opacity: 0,
+  })
+  .to("#gif2", 0, {
+    opacity: 0,
+  })
+  .to("#gif3", 0, {
+    opacity: 0,
+  })
+  .to("#info2", 0, {
+    opacity: 0,
+  })
+  .to("#info3", 0, {
+    opacity: 0,
+  })
+  .to("#nome", 0, {
+    opacity: 0,
+  })
+  .to("#about", 0, {
+    opacity: 0,
+  })
+  .to("#insta", 0, {
+    opacity: 0,
+  })
+  .to("#git", 0, {
+    opacity: 0,
+  })
+  .to("#gif1", 0.1, {
+    display: "none",
+  })
+  .to("#gif2", 0.1, {
+    display: "none",
+  })
+  .to("#gif3", 0.1, {
+    display: "none",
+  })
+  .to("#info2", 0.1, {
+    display: "none",
+  })
+  .to("#info3", 0.1, {
+    display: "none",
+  })
+  .to("#nome", 0.1, {
+    display: "none",
+  })
+  .to("#about", 0.1, {
+    display: "none",
+  })
+  .to("#insta", 0.1, {
+    display: "none",
+  })
+  .to("#git", 0.1, {
+    display: "none",
+  })
+  .to("#containerdescom", 0.1, {
+    display: "block",
+  })
+  .to("#containerdescom", 0.2, {
+    opacity: 1,
+  });
