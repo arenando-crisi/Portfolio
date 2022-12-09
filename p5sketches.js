@@ -12,8 +12,14 @@ let smppy = 0;
 let smpppx = 0;
 let smpppy = 0;
 
+let smppppx = 0;
+let smppppy = 0;
+
+let smpppppx = 0;
+let smpppppy = 0;
+
 let cnv;
-let easing = 2.5;
+let easing = 100000;
 
 let sciamouse = function (sm) {
   sm.setup = function () {
@@ -22,7 +28,7 @@ let sciamouse = function (sm) {
   };
 
   sm.draw = function () {
-    sm.clear();
+    sm.background(18, 18, 18, 200);
     sm.stroke(255);
     sm.strokeWeight(10);
     var tX = sm.mouseX;
@@ -33,6 +39,13 @@ let sciamouse = function (sm) {
     sm.line(X, Y, smpx, smpy);
     sm.line(smppx, smppy, smpx, smpy);
     sm.line(smpppx, smpppy, smppx, smppy);
+    sm.line(smppppx, smppppy, smpppx, smpppy);
+    sm.line(smpppppx, smpppppy, smppppx, smppppy);
+
+    smpppppx = smppppx;
+    smpppppy = smppppy;
+    smppppx = smpppx;
+    smppppy = smpppy;
     smpppx = smppx;
     smpppy = smppy;
     smppx = smpx;

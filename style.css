@@ -13,7 +13,7 @@ body {
   width: 100vw;
   position: absolute;
   background-color: aqua;
-  opacity: 0.1;
+  opacity: 0;
 }
 
 /*--p5 sketch----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -347,12 +347,28 @@ body {
 }
 
 #slideshowpivo {
-  background-color: rebeccapurple;
   position: relative;
   top: 10%;
   height: 80%;
   width: 40%;
   left: 3%;
+  animation: slideshowpivo 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowpivo {
+  0% {
+    background-image: url(assets/projects/pivo/pivo1.png);
+  }
+  50% {
+    background-image: url(assets/projects/pivo/pivo2.png);
+  }
+  100% {
+    background-image: url(assets/projects/pivo/pivo3.png);
+  }
 }
 
 #testipivo {
@@ -399,6 +415,86 @@ body {
   transition-duration: 0.5s;
 }
 
+#liwexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#liwmin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowliw {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowliw 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowliw {
+  0% {
+    background-image: url(assets/projects/lostinthewoods/liw1.png);
+  }
+  50% {
+    background-image: url(assets/projects/lostinthewoods/liw2.png);
+  }
+  100% {
+    background-image: url(assets/projects/lostinthewoods/liw3.png);
+  }
+}
+
+#testiliw {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titololiw {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+#testoliw {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#dataliw {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+}
+
 #tarzan {
   position: relative;
   border: solid 3px rebeccapurple;
@@ -406,6 +502,86 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+}
+
+#tarzanexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#tarzanmin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowtarzan {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowtarzan 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowtarzan {
+  0% {
+    background-image: url(assets/projects/tarzan/tarzan1.jpg);
+  }
+  50% {
+    background-image: url(assets/projects/tarzan/tarzan2.jpg);
+  }
+  100% {
+    background-image: url(assets/projects/tarzan/tarzan3.jpg);
+  }
+}
+
+#testitarzan {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titolotarzan {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+#testotarzan {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#datatarzan {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
 }
 
 #fronzoni {
@@ -417,6 +593,86 @@ body {
   transition-duration: 0.5s;
 }
 
+#fronzoniexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#fronzonimin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowfronzoni {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowfronzoni 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowfronzoni {
+  0% {
+    background-image: url(assets/projects/fronzoni/fronzoni1.png);
+  }
+  50% {
+    background-image: url(assets/projects/fronzoni/franzoni2.png);
+  }
+  100% {
+    background-image: url(assets/projects/fronzoni/fronzoni3.png);
+  }
+}
+
+#testifronzoni {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titolofronzoni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+#testofronzoni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#datafronzoni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+}
+
 #boccioni {
   position: relative;
   border: solid 3px rebeccapurple;
@@ -424,6 +680,86 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+}
+
+#boccioniexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#boccionimin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowboccioni {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowboccioni 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowboccioni {
+  0% {
+    background-image: url(assets/projects/boccioni/boccioni1.png);
+  }
+  50% {
+    background-image: url(assets/projects/boccioni/boccioni2.png);
+  }
+  100% {
+    background-image: url(assets/projects/boccioni/boccioni3.png);
+  }
+}
+
+#testiboccioni {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titoloboccioni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+#testoboccioni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#databoccioni {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
 }
 
 #lineo {
@@ -435,13 +771,174 @@ body {
   transition-duration: 0.5s;
 }
 
+#lineoexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#lineomin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowlineo {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowlineo 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowlineo {
+  0% {
+    background-image: url(assets/projects/lineo/lineo1.jpg);
+  }
+  50% {
+    background-image: url(assets/projects/lineo/lineo2.jpg);
+  }
+  100% {
+    background-image: url(assets/projects/lineo/lineo3.jpg);
+  }
+}
+
+#testilineo {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titololineo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+#testolineo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#datalineo {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+}
+
 #mdb {
   position: relative;
   border: solid 3px rebeccapurple;
   background-color: #121212;
   width: 100%;
   height: 5%;
+  bottom: 0%;
   transition-duration: 0.5s;
+}
+
+#mdbexpanded {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+#mdbmin {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  transition-duration: 0.5s;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  opacity: 1;
+}
+
+#slideshowmdb {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 40%;
+  left: 3%;
+  animation: slideshowmdb 10s infinite linear;
+  transition-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@keyframes slideshowmdb {
+  0% {
+    background-image: url(assets/projects/milanodabere/mdb1.jpg);
+  }
+  50% {
+    background-image: url(assets/projects/milanodabere/mdb2.jpg);
+  }
+  100% {
+    background-image: url(assets/projects/milanodabere/mdb3.jpg);
+  }
+}
+
+#testimdb {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  left: 6%;
+  width: 40%;
+}
+
+#titolomdb {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+#testomdb {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
+  height: 60%;
+}
+
+#datamdb {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  top: 10%;
 }
 
 /*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
