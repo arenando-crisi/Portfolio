@@ -70,3 +70,27 @@ let tdescom = gsap
   .to("#containerdescom", 0.2, {
     opacity: 1,
   });
+
+let tcreative = gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#tcreative",
+      start: "top center",
+      end: "bottom center",
+      //markers: "true",
+      toggleActions: "play none reverse none",
+    },
+  })
+  .to("#containerdescom", 0, {
+    opacity: 0,
+  })
+  .to("#info2", 0, {
+    display: "block",
+  })
+  .to("#info2", 0.1, {
+    opacity: 1,
+    top: "130vh",
+  })
+  .to("#containerdescom", 0, {
+    display: "none",
+  });

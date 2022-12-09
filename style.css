@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  height: 200vh;
+  height: 300vh;
   user-select: none;
   opacity: 1;
   overscroll-behavior-y: none;
@@ -317,14 +317,15 @@ body {
   top: 65.5vh;
   display: none;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #pivo {
   border: solid 3px rebeccapurple;
-  background-color: #121212;
   width: 100%;
   height: 70%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #pivoexpanded {
@@ -332,6 +333,7 @@ body {
   width: 100%;
   height: 100%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #pivomin {
@@ -413,6 +415,7 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #liwexpanded {
@@ -421,6 +424,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #liwmin {
@@ -502,6 +506,7 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #tarzanexpanded {
@@ -510,6 +515,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #tarzanmin {
@@ -591,6 +597,7 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #fronzoniexpanded {
@@ -599,6 +606,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #fronzonimin {
@@ -680,6 +688,7 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #boccioniexpanded {
@@ -688,6 +697,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #boccionimin {
@@ -769,6 +779,7 @@ body {
   width: 100%;
   height: 5%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #lineoexpanded {
@@ -777,6 +788,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #lineomin {
@@ -859,6 +871,7 @@ body {
   height: 5%;
   bottom: 0%;
   transition-duration: 0.5s;
+  background-color: transparent;
 }
 
 #mdbexpanded {
@@ -867,6 +880,7 @@ body {
   height: 100%;
   transition-duration: 0.5s;
   opacity: 0;
+  background-color: transparent;
 }
 
 #mdbmin {
@@ -945,10 +959,22 @@ body {
 
 #tdescom {
   top: 90vh;
+  height: 2px;
+}
+
+#tcreative {
+  top: 150vh;
+  height: 2px;
 }
 
 /*--page positioners----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #pdescom {
   top: 50vh;
+  height: 2px;
+}
+
+#pcreative {
+  top: 125vh;
+  height: 2px;
 }

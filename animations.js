@@ -242,3 +242,10 @@ let mdbexp = gsap
 
 document.querySelector("#mdb").onmouseover = () => mdbexp.restart();
 document.querySelector("#mdb").onmouseleave = () => mdbexp.reverse(0);
+
+let scrolltocreative = gsap.to(window, {
+  paused: true,
+  duration: 3,
+  scrollTo: "#pcreative",
+});
+document.querySelector("#gif2").onclick = () => scrolltocreative.restart();

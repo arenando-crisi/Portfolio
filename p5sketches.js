@@ -19,11 +19,11 @@ let smpppppx = 0;
 let smpppppy = 0;
 
 let cnv;
-let easing = 100000;
+let easing = 900000000000000000;
 
 let sciamouse = function (sm) {
   sm.setup = function () {
-    cnv = sm.createCanvas(sm.windowWidth, 2 * sm.windowHeight);
+    cnv = sm.createCanvas(sm.windowWidth, 3 * sm.windowHeight);
     cnv.class("sciamouse");
   };
 
