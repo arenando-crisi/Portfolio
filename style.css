@@ -955,6 +955,27 @@ body {
   top: 10%;
 }
 
+/*--creative coding----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#containercoding {
+  opacity: 0;
+  position: absolute;
+  width: 82vw;
+  left: 9vw;
+  height: 75vh;
+  top: 140vh;
+  display: none;
+  transition-duration: 0.5s;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottonec {
+  width: 20vw;
+  height: 5vh;
+  border: solid 3px rebeccapurple;
+}
+
 /*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #tdescom {

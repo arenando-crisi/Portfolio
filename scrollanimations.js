@@ -87,10 +87,16 @@ let tcreative = gsap
   .to("#info2", 0, {
     display: "block",
   })
+  .to("#containercoding", 0, {
+    display: "flex",
+  })
+  .to("#containercoding", 0.1, {
+    opacity: 1,
+  })
   .to("#info2", 0.1, {
     opacity: 1,
     top: "130vh",
   })
-  .to("#containerdescom", 0, {
+  .to("#containerdescom", 0.1, {
     display: "none",
   });

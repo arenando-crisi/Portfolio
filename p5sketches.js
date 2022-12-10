@@ -19,7 +19,7 @@ let smpppppx = 0;
 let smpppppy = 0;
 
 let cnv;
-let easing = 900000000000000000;
+let easing = 900000000000000000000000000000;
 
 let sciamouse = function (sm) {
   sm.setup = function () {
