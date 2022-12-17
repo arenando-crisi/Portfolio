@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  height: 300vh;
+  height: 320vh;
   user-select: none;
   opacity: 1;
   overscroll-behavior-y: none;
@@ -38,6 +38,7 @@ body {
 #about:hover {
   background-color: rebeccapurple;
   color: #121212;
+  cursor: pointer;
 }
 
 #insta {
@@ -156,6 +157,7 @@ body {
   border: solid 3px rebeccapurple;
   top: 48.5vh;
   height: 10vw;
+  cursor: pointer;
 }
 
 @keyframes gif1 {
@@ -212,6 +214,7 @@ body {
   border: solid 3px rebeccapurple;
   top: 58.5vh;
   height: 12vw;
+  cursor: pointer;
 }
 
 #gif3 {
@@ -974,6 +977,39 @@ body {
   width: 20vw;
   height: 5vh;
   border: solid 3px rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*--about----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#containerabout {
+  position: absolute;
+  top: 240vh;
+  width: 82vw;
+  left: 9vw;
+  border: solid 3px rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+}
+
+#textabout {
+  position: relative;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  text-decoration: none;
+  width: 35vw;
+  top: 5vh;
+  right: 3vw;
 }
 
 /*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -997,5 +1033,10 @@ body {
 
 #pcreative {
   top: 125vh;
+  height: 2px;
+}
+
+#pabout {
+  top: 220vh;
   height: 2px;
 }

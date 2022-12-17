@@ -249,3 +249,10 @@ let scrolltocreative = gsap.to(window, {
   scrollTo: "#pcreative",
 });
 document.querySelector("#gif2").onclick = () => scrolltocreative.restart();
+
+let scrolltoabout = gsap.to(window, {
+  paused: true,
+  duration: 3,
+  scrollTo: "#pabout",
+});
+document.querySelector("#about").onclick = () => scrolltoabout.restart();
