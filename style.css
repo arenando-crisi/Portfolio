@@ -238,7 +238,7 @@ body {
 
 @keyframes gif3 {
   0% {
-    background-image: url(assets/photos/_MG_1877.jpg);
+    background-image: url("assets/photos/_MG_1877.jpg");
     background-position: 0% 20%;
     background-size: 100%;
   }
