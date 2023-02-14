@@ -1,1043 +1,237 @@
-html,
-body {
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  height: 320vh;
-  user-select: none;
-  opacity: 1;
-  overscroll-behavior-y: none;
 }
 
-.triggers {
+body {
+  background-color: black;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: scroll;
+}
+
+#totalpage {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   width: 100vw;
-  position: absolute;
-  background-color: aqua;
-  opacity: 0;
 }
 
-/*--p5 sketch----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--landing page----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#about {
-  position: absolute;
-  text-align: center;
-  top: 28vh;
-  left: 9vw;
-  width: 4vw;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1vw;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-  text-decoration: none;
+.page {
+  scroll-snap-align: start;
 }
 
-#about:hover {
-  background-color: rebeccapurple;
-  color: #121212;
-  cursor: pointer;
+.innerpage {
+  width: 100vw;
+  height: 100vh;
 }
 
-#insta {
-  position: absolute;
-  text-align: center;
-  top: 28vh;
-  right: 9vw;
-  width: 1.5vw;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1vw;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-  text-decoration: none;
-}
-
-#insta:hover {
-  background-color: rebeccapurple;
-  color: #121212;
-}
-
-#git {
-  position: absolute;
-  text-align: center;
-  top: 28vh;
-  right: 11vw;
-  width: 2vw;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1vw;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-  text-decoration: none;
-}
-
-#git:hover {
-  background-color: rebeccapurple;
-  color: #121212;
-}
-
-#nome {
-  color: #121212;
-  background-color: rebeccapurple;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 10vw;
-  position: absolute;
-  text-align: center;
-  width: 82vw;
-  left: 9vw;
-  top: 32vh;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#info1 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.5vw;
-  position: absolute;
-  left: 9vw;
-  width: 34vw;
-  top: 55.6vh;
-  z-index: 1;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#info2 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.5vw;
-  position: absolute;
-  text-align: right;
-  right: 9vw;
-  width: 25vw;
-  top: 65.6vh;
-  z-index: 1;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#info3 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 2.5vw;
-  position: absolute;
-  left: 9vw;
-  width: 20vw;
-  top: 75.6vh;
-  z-index: 1;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-  white-space: nowrap;
-}
-
-#gif1 {
-  border: solid 3px #121212;
-  background-color: grey;
-  background-position: center;
-  position: absolute;
-  right: 9vw;
-  width: 47vw;
-  height: 3vw;
-  top: 55.5vh;
-  animation: gif1 40s infinite linear;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#gif1:hover {
-  border: solid 3px rebeccapurple;
-  top: 48.5vh;
-  height: 10vw;
-  cursor: pointer;
-}
-
-@keyframes gif1 {
-  0% {
-    background-image: url(assets/projects/gif1.jpg);
-    background-position: 0% 10%;
-    background-size: 100%;
-  }
-  16% {
-    background-image: url(assets/projects/gif3.jpg);
-    background-position: 0% 20%;
-    background-size: 100%;
-  }
-  32% {
-    background-image: url(assets/projects/gif4.jpg);
-    background-position: 0% 30%;
-    background-size: 100%;
-  }
-  48% {
-    background-image: url(assets/projects/gif5.jpg);
-    background-position: 0% 40%;
-    background-size: 100%;
-  }
-  64% {
-    background-image: url(assets/projects/gif6.jpg);
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-  80% {
-    background-image: url(assets/projects/gif7.jpg);
-    background-position: 0% 60%;
-    background-size: 100%;
-  }
-  100% {
-    background-image: url(assets/projects/gif2.jpg);
-    background-position: 0% 70%;
-    background-size: 100%;
-  }
-}
-
-#gif2 {
-  border: solid 3px #121212;
-  background-color: grey;
-  position: absolute;
-  left: 9vw;
-  width: 56vw;
-  height: 3vw;
-  top: 65.5vh;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#gif2:hover {
-  border: solid 3px rebeccapurple;
-  top: 58.5vh;
-  height: 12vw;
-  cursor: pointer;
-}
-
-#gif3 {
-  border: solid 3px #121212;
-  background-position: center;
-  position: absolute;
-  right: 9vw;
-  width: 46.5vw;
-  height: 3vw;
-  top: 75.5vh;
-  animation: gif3 60s infinite linear;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-}
-
-#gif3:hover {
-  border: solid 3px rebeccapurple;
-  top: 68.5vh;
-  height: 12vw;
-}
-
-@keyframes gif3 {
-  0% {
-    background-image: url("assets/photos/_MG_1877.jpg");
-    background-position: 0% 20%;
-    background-size: 100%;
-  }
-  8% {
-    background-image: url("assets/photos/_MG_3276.jpg");
-    background-position: 0% 25%;
-    background-size: 100%;
-  }
-  16% {
-    background-image: url("assets/photos/_MG_3499.jpg");
-    background-position: 0% 30%;
-    background-size: 100%;
-  }
-  24% {
-    background-image: url("assets/photos/_MG_5124.jpg");
-    background-position: 0% 35%;
-    background-size: 100%;
-  }
-  32% {
-    background-image: url("assets/photos/_MG_5505.jpg");
-    background-position: 0% 40%;
-    background-size: 100%;
-  }
-  40% {
-    background-image: url("assets/photos/_MG_5558.jpg");
-    background-position: 0% 45%;
-    background-size: 100%;
-  }
-  48% {
-    background-image: url("assets/photos/_MG_7204.jpg");
-    background-position: 0% 50%;
-    background-size: 100%;
-  }
-  56% {
-    background-image: url("assets/photos/_MG_7591.jpg");
-    background-position: 0% 55%;
-    background-size: 100%;
-  }
-  64% {
-    background-image: url("assets/photos/_MG_9304.jpg");
-    background-position: 0% 60%;
-    background-size: 100%;
-  }
-  72% {
-    background-image: url("assets/photos/_MG_9352.jpg");
-    background-position: 0% 65%;
-    background-size: 100%;
-  }
-  80% {
-    background-image: url("assets/photos/_MG_9437.jpg");
-    background-position: 0% 70%;
-    background-size: 100%;
-  }
-  88% {
-    background-image: url("assets/photos/IMG_2811.jpg");
-    background-position: 0% 75%;
-    background-size: 100%;
-  }
-  96% {
-    background-image: url("assets/photos/IMG_4665-Edit.jpg");
-    background-position: 0% 80%;
-    background-size: 100%;
-  }
-  100% {
-    background-image: url("assets/photos/Untitled-1.jpg");
-    background-position: 0% 85%;
-    background-size: 100%;
-  }
-}
-
-/*--des com----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#containerdescom {
-  opacity: 0;
-  position: absolute;
-  width: 82vw;
-  left: 9vw;
-  height: 75vh;
-  top: 65.5vh;
+::-webkit-scrollbar {
   display: none;
-  transition-duration: 0.5s;
-  background-color: transparent;
 }
 
-#pivo {
-  border: solid 3px rebeccapurple;
-  width: 100%;
-  height: 70%;
-  transition-duration: 0.5s;
-  background-color: transparent;
+::selection {
+  background-color: deeppink;
+  color: black;
 }
 
-#pivoexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
+#titolone {
+  position: fixed;
 
-#pivomin {
-  position: absolute;
-  top: 1.5%;
-  left: 3%;
-  transition-duration: 0.5s;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
-  font-size: 1vw;
-  opacity: 0;
+  text-decoration: none;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  cursor: pointer;
+
+  font-size: 14vh;
+  left: 16vh;
+  top: 3vh;
+  z-index: 10;
 }
 
-#slideshowpivo {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowpivo 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+#info {
+  position: fixed;
+  top: 2vh;
 
-@keyframes slideshowpivo {
-  0% {
-    background-image: url(assets/projects/pivo/pivo1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/pivo/pivo2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/pivo/pivo3.jpg);
-  }
-}
-
-#testipivo {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titolopivo {
-  position: relative;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
-  font-size: 3vw;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+
+  font-size: 3.5vh;
+  right: 18vh;
 }
 
-#testopivo {
-  position: relative;
+#projects {
+  position: fixed;
+  top: 2vh;
+
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#datapivo {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-#liw {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
-
-#liwexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#liwmin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 3.5vh;
+  right: 3vh;
+  z-index: 10;
 }
 
-#slideshowliw {
+#hello {
   position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowliw 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 
-@keyframes slideshowliw {
-  0% {
-    background-image: url(assets/projects/lostinthewoods/liw1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/lostinthewoods/liw2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/lostinthewoods/liw3.jpg);
-  }
-}
-
-#testiliw {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titololiw {
-  position: relative;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
-  font-size: 3vw;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 3.5vh;
+  width: 35vw;
+  left: 52vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
 }
 
-#testoliw {
-  position: relative;
+#nome::selection {
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
+  background-color: black;
 }
 
-#dataliw {
+#ita::selection {
+  color: black;
+  background-color: #009247;
+}
+
+#li::selection {
+  color: black;
+  background-color: white;
+}
+
+#an::selection {
+  color: black;
+  background-color: #ce2b36;
+}
+
+/*-------------projects-------------*/
+
+.prj {
   position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
+  width: 35vw;
+  max-width: 60vh;
+  height: auto;
+  transition-duration: 0.2s;
+  pointer-events: auto;
+  z-index: 2;
 }
 
-#tarzan {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  transition-duration: 0.5s;
-  background-color: transparent;
+.prj:hover {
+  opacity: 0.3;
 }
 
-#tarzanexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#tarzanmin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
-}
-
-#slideshowtarzan {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowtarzan 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@keyframes slideshowtarzan {
-  0% {
-    background-image: url(assets/projects/tarzan/tarzan1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/tarzan/tarzan2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/tarzan/tarzan3.jpg);
-  }
-}
-
-#testitarzan {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titolotarzan {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 3vw;
-}
-
-#testotarzan {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#datatarzan {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-#fronzoni {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
-
-#fronzoniexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#fronzonimin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
-}
-
-#slideshowfronzoni {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowfronzoni 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@keyframes slideshowfronzoni {
-  0% {
-    background-image: url(assets/projects/fronzoni/fronzoni1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/fronzoni/franzoni2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/fronzoni/fronzoni3.jpg);
-  }
-}
-
-#testifronzoni {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titolofronzoni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 2vw;
-}
-
-#testofronzoni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#datafronzoni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-#boccioni {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
-
-#boccioniexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#boccionimin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
-}
-
-#slideshowboccioni {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowboccioni 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@keyframes slideshowboccioni {
-  0% {
-    background-image: url(assets/projects/boccioni/boccioni1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/boccioni/boccioni2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/boccioni/boccioni3.jpg);
-  }
-}
-
-#testiboccioni {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titoloboccioni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.5vw;
-}
-
-#testoboccioni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#databoccioni {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-#lineo {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
-
-#lineoexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#lineomin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
-}
-
-#slideshowlineo {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowlineo 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@keyframes slideshowlineo {
-  0% {
-    background-image: url(assets/projects/lineo/lineo1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/lineo/lineo2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/lineo/lineo3.jpg);
-  }
-}
-
-#testilineo {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titololineo {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 3vw;
-}
-
-#testolineo {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#datalineo {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-#mdb {
-  position: relative;
-  border: solid 3px rebeccapurple;
-  background-color: #121212;
-  width: 100%;
-  height: 5%;
-  bottom: 0%;
-  transition-duration: 0.5s;
-  background-color: transparent;
-}
-
-#mdbexpanded {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition-duration: 0.5s;
-  opacity: 0;
-  background-color: transparent;
-}
-
-#mdbmin {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  transition-duration: 0.5s;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1vw;
-  opacity: 1;
-}
-
-#slideshowmdb {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  width: 40%;
-  left: 3%;
-  animation: slideshowmdb 10s infinite linear;
-  transition-timing-function: ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@keyframes slideshowmdb {
-  0% {
-    background-image: url(assets/projects/milanodabere/mdb1.jpg);
-  }
-  50% {
-    background-image: url(assets/projects/milanodabere/mdb2.jpg);
-  }
-  100% {
-    background-image: url(assets/projects/milanodabere/mdb3.jpg);
-  }
-}
-
-#testimdb {
-  position: relative;
-  top: 10%;
-  height: 80%;
-  left: 6%;
-  width: 40%;
-}
-
-#titolomdb {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 3vw;
-}
-
-#testomdb {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-  height: 60%;
-}
-
-#datamdb {
-  position: relative;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  top: 10%;
-}
-
-/*--creative coding----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#containercoding {
-  opacity: 0;
-  position: absolute;
-  width: 82vw;
-  left: 9vw;
-  height: 85vh;
-  top: 140vh;
-  display: none;
-  transition-duration: 0.5s;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.bottonec {
-  width: 20vw;
-  height: 5vh;
-  border: solid 3px rebeccapurple;
+.prjcontent {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: absolute;
+  border-radius: 2vw;
+  overflow: hidden;
+}
+
+.titoli {
+  position: absolute;
+  font-size: 3.5vh;
+  width: 35vw;
+  max-width: 60vh;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
-  font-size: 1vw;
   text-decoration: none;
   text-align: center;
 }
 
-/*--about----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#containerabout {
+.sottotitoli {
   position: absolute;
-  top: 240vh;
-  width: 82vw;
-  left: 9vw;
-  border: solid 3px rebeccapurple;
-  display: flex;
-  justify-content: space-between;
+  font-size: 1.5vh;
+  top: 57%;
+  width: 35vw;
+  max-width: 60vh;
+  color: white;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
 }
 
-#textabout {
+/*-------------info-------------*/
+
+#infopage {
+  position: fixed;
+  top: -100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+#testoinfo {
   position: relative;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1vw;
-  text-decoration: none;
-  width: 35vw;
-  top: 5vh;
-  right: 3vw;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 100;
+  font-size: 3vh;
+  top: 25vh;
+  left: 40vw;
+  width: 50vw;
 }
 
-/*--triggers----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#tdescom {
-  top: 90vh;
-  height: 2px;
+.contacts {
+  position: relative;
+  color: white;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 3.5vh;
+  width: 50vw;
 }
 
-#tcreative {
-  top: 150vh;
-  height: 2px;
+/*-------------infinitescroll-------------*/
+
+.main-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  left: 10vw;
+  pointer-events: auto;
 }
 
-/*--page positioners----------------------------------------------------------------------------------------------------------------------------------------*/
-
-#pdescom {
-  top: 50vh;
-  height: 2px;
+.scroll-container {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  overflow: scroll;
 }
 
-#pcreative {
-  top: 125vh;
-  height: 2px;
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
-#pabout {
-  top: 220vh;
-  height: 2px;
+.scroll-element-r {
+  position: relative;
+  height: 40vh;
+  color: white;
+  pointer-events: none;
+}
+
+.scroll-display {
+  display: none;
 }
