@@ -15,6 +15,7 @@ body {
 
 #totalpage {
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   display: flex;
   flex-direction: column;
