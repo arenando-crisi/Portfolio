@@ -16,23 +16,26 @@ scrollContainer.addEventListener("scroll", (e) => {
         100 +
       "%";
     //KREIS
+
     document.querySelector(".kreis").style.offsetDistance = display.style.top;
   } else {
     display.style.top =
       (scrollContainer.scrollTop / scrollContainer.scrollHeight) * 2 * 100 +
       "%";
     //KREIS
+
     document.querySelector(".kreis").style.offsetDistance = display.style.top;
   }
+
   if (
-    scrollContainer.offsetHeight + scrollContainer.scrollTop >=
+    scrollContainer.offsetHeight + scrollContainer.scrollTop + 1 >=
     scrollContainer.scrollHeight
   ) {
     const container = document.querySelector(".scroll-elemente");
     const clone = container.cloneNode(true);
     const parent = container.parentElement;
     parent.appendChild(clone);
-    parent.children[0].remove();
+    parent.firstElementChild.remove();
     display.style.top = "0%";
   }
 
