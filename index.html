@@ -1,273 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Andrea Corsini</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+  <title>Andrea Corsini</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-    <script src="libraries/p5.min.js"></script>
-  </head>
-  <body>
-    <div id="totalpage">
-      <div id="pageinfo" class="page">
-        <div class="innerpage">
-          <div id="testoinfo">
-            here i am, if you want to contact me, you can find me here:
-          </div>
+  <link rel="stylesheet" href="style.css" />
 
-          <div class="contacts" id="c1">
-            arenando_crisi on
-            <a
-              href="https://t.me/arenando_crisi"
-              style="
+  <script src="libraries/p5.min.js"></script>
+</head>
+
+<body>
+  <div id="totalpage">
+    <div id="pageinfo" class="page">
+      <div class="innerpage">
+        <div id="testoinfo">
+          here i am, if you want to contact me, you can find me here:
+        </div>
+
+        <div class="contacts" id="c1">
+          arenando_crisi on
+          <a href="https://t.me/arenando_crisi" style="
                 text-decoration: none;
                 background-color: deeppink;
                 color: black;
-              "
-              >telegram</a
-            >
-          </div>
+              ">telegram</a>
+        </div>
 
-          <div class="contacts" id="c2">
-            arenando_crisi on
-            <a
-              href="https://github.com/arenando-crisi"
-              style="
+        <div class="contacts" id="c2">
+          arenando_crisi on
+          <a href="https://github.com/arenando-crisi" style="
                 text-decoration: none;
                 background-color: deeppink;
                 color: black;
-              "
-              >github</a
-            >
-          </div>
+              ">github</a>
+        </div>
 
-          <div class="contacts" id="c3">
-            andreacorsini.it on
-            <a
-              href=""
-              style="
+        <div class="contacts" id="c3">
+          andreacorsini.it on
+          <a href="" style="
                 text-decoration: none;
                 background-color: deeppink;
                 color: black;
-              "
-              >the web</a
-            >
-          </div>
+              ">the web</a>
+        </div>
 
-          <div class="contacts" id="c4">
-            iam@andreacorsini.it to
-            <a
-              href="mailto: iam@andreacorsini.it?subject=Let's%20work%20together"
-              style="
+        <div class="contacts" id="c4">
+          iam@andreacorsini.it to
+          <a href="mailto: iam@andreacorsini.it?subject=Let's%20work%20together" style="
                 text-decoration: none;
                 background-color: deeppink;
                 color: black;
-              "
-              >email me</a
-            >
-          </div>
+              ">email me</a>
+        </div>
 
-          <div class="contacts" id="c5">
-            or you can take a look to my
-            <a
-              href="assets/CV_AndreaCorsini.pdf"
-              style="
+        <div class="contacts" id="c5">
+          or you can take a look to my
+          <a href="assets/CV_AndreaCorsini.pdf" style="
                 text-decoration: none;
                 background-color: deeppink;
                 color: black;
-              "
-              >CV</a
-            >
-          </div>
+              ">CV</a>
+        </div>
 
-          <img src="assets/foto.jpg" id="profilo" />
+        <img src="assets/foto.jpg" id="profilo" />
+      </div>
+    </div>
+
+    <div id="homepage" class="page">
+      <div class="innerpage">
+        <div id="hello">
+          hello, my name is
+          <span id="nome" style="background-color: deeppink; color: black">Andrea Corsini</span>, i'm an <span
+            id="ita">ita</span><span id="li">li</span><span id="an">an</span> communication designer.
         </div>
       </div>
+    </div>
 
-      <div id="homepage" class="page">
-        <div class="innerpage">
-          <div id="hello">
-            hello, my name is
-            <span id="nome" style="background-color: deeppink; color: black"
-              >Andrea Corsini</span
-            >, i'm an <span id="ita">ita</span><span id="li">li</span
-            ><span id="an">an</span> communication designer.
-          </div>
+    <div id="prjpage" class="page">
+      <div class="innerpage">
+        <div class="loop">
+          <div class="kreis"></div>
         </div>
-      </div>
 
-      <div id="prjpage" class="page">
-        <div class="innerpage">
-          <div class="loop">
-            <div class="kreis"></div>
-          </div>
-
-          <div class="main-container">
-            <div class="scroll-container" id="scroller">
-              <div class="scroll-elemente">
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p1"
-                    href="controsenso.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/boccioni/boccioni1-2.jpg" />
-                    <div class="titoli">controsenso</div>
-                    <div class="sottotitoli">amaro rumore di un addio</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p2"
-                    href="agfronzoni.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/fronzoni/fronzoni3.jpg" />
-                    <div class="titoli">ag fronzoni</div>
-                    <div class="sottotitoli">
-                      utopia e rivoluzione in pochi segni
-                    </div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p3"
-                    href="tarzan.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/tarzan/tarzan1.jpg" />
-                    <div class="titoli">tarzan</div>
-                    <div class="sottotitoli">fire run</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p4"
-                    href="milanodabere.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/mdb/mdb2.jpg" />
-                    <div class="titoli">milano da bere</div>
-                    <div class="sottotitoli">card game</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p5"
-                    href="isonu.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/franco/cc6.jpg" />
-                    <div class="titoli">i's on u</div>
-                    <div class="sottotitoli">web experience</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p6"
-                    href="lineo.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/lineo/lineo3.jpg" />
-                    <div class="titoli">lineo</div>
-                    <div class="sottotitoli">speculative design</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p7"
-                    href="pivo.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/pivo/pivo2.jpg" />
-                    <div class="titoli">pivó</div>
-                    <div class="sottotitoli">StreetBasket community app</div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p8"
-                    href="lostinwoods.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/liw/liw1.jpg" />
-                    <div class="titoli">lost in the woods</div>
-                    <div class="sottotitoli">
-                      an hike through the term surrounding reforestation
-                    </div>
-                  </a>
-                </div>
-
-                <div class="scroll-element-r">
-                  <a
-                    class="prjcontent"
-                    id="p9"
-                    href="coding.html"
-                    target="_blank"
-                  >
-                    <img class="prj" src="assets/franco/cc7.jpg" />
-                    <div class="titoli">creative coding</div>
-                    <div class="sottotitoli">some randomness made in p5.js</div>
-                  </a>
-                </div>
+        <div class="main-container">
+          <div class="scroll-container" id="scroller">
+            <div class="scroll-elemente">
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p1" href="controsenso.html" target="_blank">
+                  <img class="prj" src="assets/boccioni/boccioni1-2.jpg" />
+                  <div class="titoli">controsenso</div>
+                  <div class="sottotitoli">amaro rumore di un addio</div>
+                </a>
               </div>
 
-              <div class="scroll-display">
-                <div class="display"></div>
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p2" href="agfronzoni.html" target="_blank">
+                  <img class="prj" src="assets/fronzoni/fronzoni3.jpg" />
+                  <div class="titoli">ag fronzoni</div>
+                  <div class="sottotitoli">
+                    utopia e rivoluzione in pochi segni
+                  </div>
+                </a>
               </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p3" href="tarzan.html" target="_blank">
+                  <img class="prj" src="assets/tarzan/tarzan1.jpg" />
+                  <div class="titoli">tarzan</div>
+                  <div class="sottotitoli">fire run</div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p4" href="milanodabere.html" target="_blank">
+                  <img class="prj" src="assets/mdb/mdb2.jpg" />
+                  <div class="titoli">milano da bere</div>
+                  <div class="sottotitoli">card game</div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p5" href="isonu.html" target="_blank">
+                  <img class="prj" src="assets/franco/cc6.jpg" />
+                  <div class="titoli">i's on u</div>
+                  <div class="sottotitoli">web experience</div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p6" href="lineo.html" target="_blank">
+                  <img class="prj" src="assets/lineo/lineo3.jpg" />
+                  <div class="titoli">lineo</div>
+                  <div class="sottotitoli">speculative design</div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p7" href="pivo.html" target="_blank">
+                  <img class="prj" src="assets/pivo/pivo2.jpg" />
+                  <div class="titoli">pivó</div>
+                  <div class="sottotitoli">StreetBasket community app</div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p8" href="lostinwoods.html" target="_blank">
+                  <img class="prj" src="assets/liw/liw1.jpg" />
+                  <div class="titoli">lost in the woods</div>
+                  <div class="sottotitoli">
+                    an hike through the term surrounding reforestation
+                  </div>
+                </a>
+              </div>
+
+              <div class="scroll-element-r">
+                <a class="prjcontent" id="p9" href="coding.html" target="_blank">
+                  <img class="prj" src="assets/franco/cc7.jpg" />
+                  <div class="titoli">creative coding</div>
+                  <div class="sottotitoli">some randomness made in p5.js</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="scroll-display">
+              <div class="display"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="fascione"></div>
+  <div id="fascione"></div>
 
-    <a id="titolone" onclick="homepage()">andreacorsini.it</a>
+  <a id="titolone" onclick="homepage()">andreacorsini.it</a>
 
-    <a id="info" onclick="infopage()">info</a>
-    <a id="projects" onclick="prjpage()">projects</a>
+  <a id="info" onclick="infopage()">info</a>
+  <a id="projects" onclick="prjpage()">projects</a>
 
-    <script src="infinitescroll.js"></script>
-    <script>
-      window.onload = function () {
-        var element = document.getElementById("homepage");
-        element.scrollIntoView({ block: "start" });
-      };
+  <script src="infinitescroll.js"></script>
+  <script>
+    window.onload = function () {
+      var element = document.getElementById("homepage");
+      element.scrollIntoView({ block: "start" });
+    };
 
-      function infopage() {
-        var element = document.getElementById("pageinfo");
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+    function infopage() {
+      var element = document.getElementById("pageinfo");
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
-      function prjpage() {
-        var element = document.getElementById("prjpage");
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+    function prjpage() {
+      var element = document.getElementById("prjpage");
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
-      function homepage() {
-        var element = document.getElementById("homepage");
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    </script>
-  </body>
+    function homepage() {
+      var element = document.getElementById("homepage");
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  </script>
+  <script>
+    window.history.replaceState('', '', '/');
+  </script>
+</body>
+
 </html>
