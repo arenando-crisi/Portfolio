@@ -50,6 +50,17 @@ body {
     transform: translateY(-9.4vw);
 }
 
+#gif {
+    color: transparent;
+    display: inline-block;
+    height: 4.8vw;
+    position: relative;
+    top: 0.8vw;
+    background-image: url("assets/boccioni/boccioni1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #works {
     position: fixed;
     font-size: 1.7vw;
