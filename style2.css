@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('assets/font/HelveticaNeueMedium.otf');
 
 * {
     margin: 0;
@@ -9,13 +9,16 @@
 
 body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 #navbar {
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(14.2px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
     position: fixed;
     display: flex;
@@ -31,8 +34,32 @@ body {
     transform: translateX(-50%);
 }
 
+#works {
+    position: fixed;
+    font-size: 1.7vw;
+    left: 2.1vw;
+    top: 1.5vw;
+    padding: 0.2vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+
+}
+
+#aboutscritta {
+    position: fixed;
+    font-size: 1.7vw;
+    right: 2.1vw;
+    bottom: 1.8vw;
+    padding: 0.2vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+/*--------------------------------    HOMEPAGE    ------------------------------*/
+
 #homepage {
-    position: absolute;
     width: 100%;
     height: 100vh;
 }
@@ -46,7 +73,7 @@ body {
     font-style: normal;
     font-size: 7vw;
     line-height: 6.3vw;
-    top: 50vh;
+    top: 150vh;
     transform: translateY(-9.4vw);
 }
 
@@ -61,16 +88,115 @@ body {
     background-position: center;
 }
 
-#works {
-    position: fixed;
-    font-size: 1.7vw;
-    left: 2vw;
-    top: 1.8vw;
+/*--------------------------------    ABOUT    ------------------------------*/
+
+#about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#about {
-    position: fixed;
-    font-size: 1.7vw;
-    right: 2vw;
-    bottom: 1.8vw;
+.rettangolo{
+    background-color: grey;
+    height: 2vw;
+}
+
+.rettangolowork{
+    background-color: deeppink;
+    height: 1vw;
+}
+
+/*--------------------------------    PROGETTI    ------------------------------*/
+
+.progetto{
+    width: 30vw;
+    height: 20vw;
+    font-size: 1vw;
+    position: relative;
+}
+
+.immagine{
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5vw;
+}
+
+#boccioni{
+    top: -4vw;
+    left: 20vw;
+    background-image: url("assets/boccioni/boccioni2-2.jpg");
+    background-position: center;
+    background-size: 110%;
+}
+
+#fronzoni{
+    top: -2vw;
+    left: 62vw;
+    background-image: url("assets/fronzoni/fronzoni3.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#tarzan{
+    top: 0vw;
+    left: 9vw;
+    background-image: url("assets/tarzan/tarzan1.jpg");
+    background-position: center;
+    background-size: 90%;
+    background-color: white;
+}
+
+#mdb{
+    top: -2vw;
+    left: 54vw;
+    background-image: url("assets/mdb/mdb2.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#isonu{
+    top: 12vw;
+    left: 14vw;
+    background-image: url("assets/franco/cc8.jpg");
+    background-position: center;
+    background-size: 110%;
+}
+
+#lineo{
+    top: 8vw;
+    left: 61vw;
+    background-image: url("assets/lineo/lineo3.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#pivo{
+    top: 18vw;
+    left: 10vw;
+    background-image: url("assets/pivo/pivo3.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#liw{
+    top: 25vw;
+    left: 55vw;
+    background-image: url("assets/liw/liw1.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#coding{
+    top: 33vw;
+    left: 18vw;
+    background-image: url("assets/franco/cc7.jpg");
+    background-position: center;
+    background-size: 110%;
 }
