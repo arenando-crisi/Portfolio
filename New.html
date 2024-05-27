@@ -16,23 +16,48 @@
 <body>
 
     <div id="about">
-        <div>
-            <div style="display: flex; flex-direction: column;">
-                <a>MY CV</a>
+        <div style="width: 80%; margin-left: 10%;">
+            <div style="display: flex; flex-direction: column; margin-bottom: 5vw;">
+                <a style="font-size: 7vw; font-family: 'Cormorant Garamond', serif; line-height: 6vw;">MY CV</a>
                 <div style="display: flex;">
-                    <div>
+                    <div style="margin-right: 0.4vw; width: 50%;">
                         <div class="rettangolo"></div>
-                        <a><span>HIGH SCHOOL DIPLOMA, OPT. APPLIED SCIENCE</span><br><span>Liceo scientifico e musicale G.B. Grassi, Lecco</span></a>
+                        <a><span>HIGH SCHOOL DIPLOMA, OPT. APPLIED SCIENCE</span><br><span style="font-weight: 100;">Liceo scientifico e musicale G.B. Grassi, Lecco</span></a>
                     </div>
 
-                    <div>
+                    <div style="margin-right: 0.4vw; width: 30%;">
                         <div class="rettangolo"></div>
-                        <a><span>HIGH SCHOOL DIPLOMA, OPT. APPLIED SCIENCE</span><br><span>Liceo scientifico e musicale G.B. Grassi, Lecco</span></a>
+                        <a><span>BACHELOR DEGREE, COMUNICATION DESIGN</span><br><span style="font-weight: 100;">Politecnico di Milano</span></a>
                     </div>
 
-                    <div>
+                    <div style=" width: 30%;">
                         <div class="rettangolo"></div>
-                        <a><span>HIGH SCHOOL DIPLOMA, OPT. APPLIED SCIENCE</span><br><span>Liceo scientifico e musicale G.B. Grassi, Lecco</span></a>
+                        <a><span>MASTER DEGREE, COMUNICATION DESIGN</span><br><span style="font-weight: 100;">Politecnico di Milano</span></a>
+                    </div>
+
+                    <div style="position: absolute; text-align: end; font-family: 'Cormorant Garamond', serif; display: flex; flex-direction: column; align-items: flex-end; right: 15%; transform: translateY(-2.58vw);">
+                        <a style="margin-bottom: 0.4vw;"><span>ART DIRECTOR INTERN</span><br><span style="font-weight: 100;">Leo Burnett, Milano</span></a>
+                        <div style="background-color: deeppink; height: 1.5vw; width: 4vw;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <a style="text-align: end; font-size: 6.3vw; font-weight: 400; line-height: 6.5vw;">LET'S KEEP IN <span style="color: deeppink;">TOUCH</span></a>
+                <div style="display: flex;">
+                    <div style="margin-right: 0.4vw; width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span><span style="color: deeppink;">E-MAIL</span> ME</span><br><span style="font-weight: 100;">iam@andreacorsini.it</span></a>
+                    </div>
+
+                    <div style="margin-right: 0.4vw; width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span>TEXT ME ON <span style="color: deeppink;">TELEGRAM</span></span><br><span style="font-weight: 100;">arenando_crisi</span></a>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span>TAKE A LOOK AT MY <span style="color: deeppink;">GITHUB</span></span><br><span style="font-weight: 100;">arenando_crisi</span></a>
                     </div>
                 </div>
             </div>
@@ -124,17 +149,17 @@
         <div id="liw" class="progetto">
             <div class="immagine"></div>
             <div class="description">
-                <a><span style="font-weight: 600;">LOST IN THE WOODS</span><br><span style="font-weight: 100; font-size: 0.9vw;">an hike through the term surrounding reforestation
+                <a><span style="font-weight: 600;">LOST IN THE WOODS</span><br><span style="font-weight: 100; font-size: 0.9vw;">an hike through the term about reforestation
                 </span></a>
-                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">MOTION DESIGN</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">DATA VISUALIZATION</span></a>
             </div>
         </div>
         
         <div id="coding" class="progetto">
             <div class="immagine"></div>
             <div class="description">
-                <a><span style="font-weight: 600;">CREATIVE CODING</span><br><span style="font-weight: 100; font-size: 0.9vw;">some randomness made in p5.js</span></a>
-                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">MOTION DESIGN</span></a>
+                <a><span style="font-weight: 600;">CREATIVE CODING</span><br><span style="font-weight: 100; font-size: 0.9vw;">some random p5.js experiments</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">WEB EXPERIENCE</span></a>
             </div>
         </div>
     </div>
@@ -147,9 +172,9 @@
     -->
 
     <script>
-        window.onload = function () {
-          var element = document.getElementById("homepage");
+        document.addEventListener("DOMContentLoaded", (event) => {
+            var element = document.getElementById("homepage");
           element.scrollIntoView({ block: "start" });
-        };
+        });
     </script>
 </body>
