@@ -2,211 +2,243 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Andrea Corsini</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <title>Andrea Corsini</title>
+    <link rel="icon" type="image/x-icon" href="assets\favicon.png" />
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
 
-  <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.min.js"></script>
 </head>
 
 <body>
-  <div id="totalpage">
-    <div id="pageinfo" class="page">
-      <div class="innerpage">
-        <div id="testoinfo">
-          here i am, if you want to contact me, you can find me here:
-        </div>
-
-        <div class="contacts" id="c1">
-          arenando_crisi on
-          <a href="https://t.me/arenando_crisi" style="
-                text-decoration: none;
-                background-color: deeppink;
-                color: black;
-              ">telegram</a>
-        </div>
-
-        <div class="contacts" id="c2">
-          arenando_crisi on
-          <a href="https://github.com/arenando-crisi" style="
-                text-decoration: none;
-                background-color: deeppink;
-                color: black;
-              ">github</a>
-        </div>
-
-        <div class="contacts" id="c3">
-          andreacorsini.it on
-          <a href="" style="
-                text-decoration: none;
-                background-color: deeppink;
-                color: black;
-              ">the web</a>
-        </div>
-
-        <div class="contacts" id="c4">
-          iam@andreacorsini.it to
-          <a href="mailto: iam@andreacorsini.it?subject=Let's%20work%20together" style="
-                text-decoration: none;
-                background-color: deeppink;
-                color: black;
-              ">email me</a>
-        </div>
-
-        <div class="contacts" id="c5">
-          or you can take a look to my
-          <a href="assets/CV_AndreaCorsini.pdf" style="
-                text-decoration: none;
-                background-color: deeppink;
-                color: black;
-              ">CV</a>
-        </div>
-
-        <img src="assets/foto.jpg" id="profilo" />
-      </div>
+    <!------------------------------------SCROLL------------------------------------->
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
     </div>
 
-    <div id="homepage" class="page">
-      <div class="innerpage">
-        <div id="hello">
-          hello, my name is
-          <span id="nome" style="background-color: deeppink; color: black">Andrea Corsini</span>, i'm an <span
-            id="ita">ita</span><span id="li">li</span><span id="an">an</span> communication designer.
-        </div>
-      </div>
+    <!------------------------------------SPLASH-----------------------------------
+    <div id="splash"></div>-->
+
+
+    <!------------------------------------NAVBAR------------------------------------->
+    <div id="navbar">
+        <a>andreacorsini.it</a>
+        <a>-</a>
+        <a href="" style="height: 100%;"><img src="assets\favicon.png" height="100%"></a>
+        <a>-</a>
+        <a>portfolio 2024</a>
     </div>
 
-    <div id="prjpage" class="page">
-      <div class="innerpage">
-        <div class="loop">
-          <div class="kreis"></div>
-        </div>
+    <a id="works" onclick="worksScroll()">works</a>
+    <a id="aboutscritta" onclick="aboutScroll()">about</a>
 
-        <div class="main-container">
-          <div class="scroll-container" id="scroller">
-            <div class="scroll-elemente">
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p1" href="controsenso.html" target="_blank">
-                  <img class="prj" src="assets/boccioni/boccioni1-2.jpg" />
-                  <div class="titoli">controsenso</div>
-                  <div class="sottotitoli">amaro rumore di un addio</div>
-                </a>
-              </div>
+    <!------------------------------------ABOUT------------------------------------->
+    <div id="about">
+        <div style="width: 80%; margin-left: 10%;">
+            <div style="display: flex; flex-direction: column; margin-bottom: 5vw;">
+                <a style="font-size: 7vw; font-family: 'Cormorant Garamond', serif; line-height: 6vw;">MY CV</a>
+                <div style="display: flex;">
+                    <div style="margin-right: 0.4vw; width: 50%;">
+                        <div class="rettangolo"></div>
+                        <a><span>HIGH SCHOOL DIPLOMA, OPT. APPLIED SCIENCE</span><br><span
+                                style="font-weight: 100;">Liceo scientifico e musicale G.B. Grassi, Lecco</span></a>
+                    </div>
 
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p2" href="agfronzoni.html" target="_blank">
-                  <img class="prj" src="assets/fronzoni/fronzoni3.jpg" />
-                  <div class="titoli">ag fronzoni</div>
-                  <div class="sottotitoli">
-                    utopia e rivoluzione in pochi segni
-                  </div>
-                </a>
-              </div>
+                    <div style="margin-right: 0.4vw; width: 30%;">
+                        <div class="rettangolo"></div>
+                        <a><span>BACHELOR DEGREE, COMMUNICATION DESIGN</span><br><span
+                                style="font-weight: 100;">Politecnico di Milano</span></a>
+                    </div>
 
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p3" href="tarzan.html" target="_blank">
-                  <img class="prj" src="assets/tarzan/tarzan1.jpg" />
-                  <div class="titoli">tarzan</div>
-                  <div class="sottotitoli">fire run</div>
-                </a>
-              </div>
+                    <div style=" width: 30%;">
+                        <div class="rettangolo"></div>
+                        <a><span>MASTER DEGREE, COMMUNICATION DESIGN</span><br><span
+                                style="font-weight: 100;">Politecnico di Milano</span></a>
+                    </div>
 
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p4" href="milanodabere.html" target="_blank">
-                  <img class="prj" src="assets/mdb/mdb2.jpg" />
-                  <div class="titoli">milano da bere</div>
-                  <div class="sottotitoli">card game</div>
-                </a>
-              </div>
-
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p5" href="isonu.html" target="_blank">
-                  <img class="prj" src="assets/franco/cc6.jpg" />
-                  <div class="titoli">i's on u</div>
-                  <div class="sottotitoli">web experience</div>
-                </a>
-              </div>
-
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p6" href="lineo.html" target="_blank">
-                  <img class="prj" src="assets/lineo/lineo3.jpg" />
-                  <div class="titoli">lineo</div>
-                  <div class="sottotitoli">speculative design</div>
-                </a>
-              </div>
-
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p7" href="pivo.html" target="_blank">
-                  <img class="prj" src="assets/pivo/pivo2.jpg" />
-                  <div class="titoli">pivó</div>
-                  <div class="sottotitoli">StreetBasket community app</div>
-                </a>
-              </div>
-
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p8" href="lostinwoods.html" target="_blank">
-                  <img class="prj" src="assets/liw/liw1.jpg" />
-                  <div class="titoli">lost in the woods</div>
-                  <div class="sottotitoli">
-                    an hike through the term surrounding reforestation
-                  </div>
-                </a>
-              </div>
-
-              <div class="scroll-element-r">
-                <a class="prjcontent" id="p9" href="coding.html" target="_blank">
-                  <img class="prj" src="assets/franco/cc7.jpg" />
-                  <div class="titoli">creative coding</div>
-                  <div class="sottotitoli">some randomness made in p5.js</div>
-                </a>
-              </div>
+                    <div
+                        style="position: absolute; text-align: end; font-family: 'Cormorant Garamond', serif; display: flex; flex-direction: column; align-items: flex-end; right: 15%; transform: translateY(-2.58vw);">
+                        <a style="margin-bottom: 0.4vw;"><span>ART DIRECTOR INTERN</span><br><span
+                                style="font-weight: 100;">Leo Burnett, Milano</span></a>
+                        <div style="background-color: deeppink; height: 1.5vw; width: 6vw;"></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="scroll-display">
-              <div class="display"></div>
+            <div style="display: flex; flex-direction: column;">
+                <a style="text-align: end; font-size: 6.3vw; font-weight: 400; line-height: 6.5vw;">LET'S KEEP IN
+                    <span style="color: deeppink;">TOUCH</span></a>
+                <div style="display: flex;">
+                    <div style="margin-right: 0.4vw; width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span><span style="color: deeppink;">E-MAIL</span> ME</span><br><span
+                                style="font-weight: 100;">iam@andreacorsini.it</span></a>
+                    </div>
+
+                    <div style="margin-right: 0.4vw; width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span>TEXT ME ON <span style="color: deeppink;">TELEGRAM</span></span><br><span
+                                style="font-weight: 100;">arenando_crisi</span></a>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <div class="rettangolocontact"></div>
+                        <a><span>TAKE A LOOK AT MY <span style="color: deeppink;">GITHUB</span></span><br><span
+                                style="font-weight: 100;">arenando_crisi</span></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
+
     </div>
-  </div>
 
-  <div id="fascione"></div>
+    <!------------------------------------HOMEPAGE------------------------------------->
+    <div id="homepage">
+        <a id="titolone"><span style="position: absolute; transform: translateX(8vw);">HI, I'M A
+                COMMUNICATION</span><br>
+            <span
+                style="font-family: Arial, Helvetica, sans-serif; font-size: 6.3vw; position: absolute; transform: translateX(3vw);"><span
+                    style="color: deeppink;">DESIGNER</span>, HERE YOU
+                CAN
+            </span><br>
+            <span style="position: absolute; transform: translateX(17vw);"><span id="gif">---------</span>
+                FIND MY WORKS</span></a>
+    </div>
 
-  <a id="titolone" onclick="homepage()">andreacorsini.it</a>
+    <!------------------------------------PROJECTS------------------------------------->
+    <div id="ancoraworks"></div>
 
-  <a id="info" onclick="infopage()">info</a>
-  <a id="projects" onclick="prjpage()">projects</a>
+    <div id="projects">
 
-  <script src="infinitescroll.js"></script>
-  <script>
-    window.onload = function () {
-      var element = document.getElementById("homepage");
-      element.scrollIntoView({ block: "start" });
-    };
+        <div id="boccioni" class="progetto" onclick="location.href='controsenso.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">CONTROSENSO</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">amaro rumore di un addio</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">MOTION
+                        DESIGN</span></a>
+            </div>
+        </div>
 
-    function infopage() {
-      var element = document.getElementById("pageinfo");
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
 
-    function prjpage() {
-      var element = document.getElementById("prjpage");
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+        <div id="fronzoni" class="progetto" onclick="location.href='agfronzoni.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">AG FRONZONI</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">utopia e rivoluzione in pochi segni</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">MAGAZINE</span></a>
+            </div>
+        </div>
 
-    function homepage() {
-      var element = document.getElementById("homepage");
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  </script>
-  <script>
-    window.history.replaceState('', '', '/');
-  </script>
+        <div id="tarzan" class="progetto" onclick="location.href='tarzan.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">TARZAN</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">fire run</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">GAME</span></a>
+            </div>
+        </div>
+
+        <div id="mdb" class="progetto" onclick="location.href='milanodabere.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">MILANO DA BERE</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw; "></span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">CARD GAME</span></a>
+            </div>
+        </div>
+
+        <div id="isonu" class="progetto" onclick="location.href='isonu.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">I'S ON U</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">eyes on you</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">WEB
+                        EXPERIENCE</span></a>
+            </div>
+        </div>
+
+        <div id="lineo" class="progetto" onclick="location.href='lineo.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">LINEO</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">chirolab</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">SPECULATIVE
+                        DESIGN</span></a>
+            </div>
+        </div>
+
+        <div id="pivo" class="progetto" onclick="location.href='pivo.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">PIVÓ</span><br><span
+                        style="font-weight: 100 ; font-size: 0.9vw;">streetbasket community app</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">INTERACTION
+                        DESIGN</span></a>
+            </div>
+        </div>
+
+        <div id="liw" class="progetto" onclick="location.href='lostinwoods.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">LOST IN THE WOODS</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">an hike through the term about reforestation
+                    </span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">DATA
+                        VISUALIZATION</span></a>
+            </div>
+        </div>
+
+        <div id="coding" class="progetto" onclick="location.href='coding.html'">
+            <div class="immagine"></div>
+            <div class="description">
+                <a><span style="font-weight: 600;">CREATIVE CODING</span><br><span
+                        style="font-weight: 100; font-size: 0.9vw;">some random p5.js experiments</span></a>
+                <a><span style="font-family:'Cormorant Garamond', serif; font-size: 1.03vw;">WEB
+                        EXPERIENCE</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="spaziosotto"></div>
+
+
+
+    <script>
+        window.history.replaceState('', '', '/');
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            var element = document.getElementById("homepage");
+            element.scrollIntoView({ block: "start" });
+        });
+
+        window.onload = function () {
+            document.getElementById("body").classList.add('scroll');
+        }
+
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        function worksScroll() {
+            var element = document.getElementById("ancoraworks");
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        function aboutScroll() {
+            var element = document.getElementById("about");
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    </script>
 </body>
-
-</html>
