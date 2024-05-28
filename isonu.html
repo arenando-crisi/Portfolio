@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Andrea Corsini - i's on u</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+  <title>Andrea Corsini - i's on u</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-    <script src="libraries/p5.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="style2.css" />
+
+  <script src="libraries/p5.min.js"></script>
+</head>
+
 </html>
-<body>
-  <a id="titolone" href="index.html">andreacorsini.it</a>
-  <a id="projects" href="javascript:window.open('','_self').close();">back</a>
 
-  <div id="fascione"></div>
+<body>
+  <!------------------------------------SCROLL------------------------------------->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!------------------------------------NAVBAR------------------------------------->
+  <div id="navbar">
+    <a>andreacorsini.it</a>
+    <a>-</a>
+    <a href="" style="height: 100%;"><img src="assets\favicon.png" height="100%"></a>
+    <a>-</a>
+    <a>portfolio 2024</a>
+  </div>
+
+  <a id="works" href="index.html" style="color: white; text-decoration: none;">back</a>
+
+  <!------------------------------------HOMEPAGE------------------------------------->
+  <div id="homepage">
+    <a id="titoloneprj"><span style="position: absolute; transform: translateX(40vw); color: deeppink;">I'S ON
+        U</span><br>
+      <span
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 6.3vw; position: absolute; transform: translateX(30vw);">EYES
+        ON YOU
+      </span></a>
+  </div>
 
   <div id="totale">
     <div id="immagini">
@@ -28,9 +52,6 @@
     </div>
     <div id="testi">
       <div id="testo">
-        <span style="font-weight: 500; font-size: 3vh"
-          >I's on U - Eyes on you</span
-        ><br /><br />
         I's on u is a web experience in which the user is asked to reflect on
         how he approaches the various electronic devices present in his daily
         life, especially during the moments in which he watches different
@@ -43,13 +64,10 @@
         ml5’s Face-api for facial recognition.
         <br />
         <br />
-        <a
-          href="https://drawwithcode.github.io/2022-group-project-group08/"
-          style="text-decoration: underline; color: white"
-          >Here you can try the experience</a
-        >
+        <a href="https://drawwithcode.github.io/2022-group-project-group08/"
+          style="text-decoration: underline; color: white">Here you can try the experience</a>
         <br /><br />
-        <span style="font-size: 1.5vh">
+        <span style="font-size: 0.9vw">
           in collaboration with:<br />
           Simone Cerea<br />
           Giuseppe Defilippis<br />
@@ -59,4 +77,15 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
 </body>

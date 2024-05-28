@@ -21,6 +21,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -160,6 +161,10 @@ body {
     background-color: deeppink;
 }
 
+.tasticontatto {
+    cursor: pointer;
+}
+
 /*--------------------------------    PROGETTI    ------------------------------*/
 
 #ancoraworks {
@@ -258,4 +263,45 @@ body {
     background-image: url("assets/franco/cc7.jpg");
     background-position: center;
     background-size: 110%;
+}
+
+/*--------------------------------   PAGINE PROGETTI    ------------------------------*/
+
+#titoloneprj {
+    position: absolute;
+    width: 110%;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7vw;
+    line-height: 6.3vw;
+    top: 50vh;
+    transform: translateY(-9.4vw);
+}
+
+#totale {
+    width: 80vw;
+    position: relative;
+    left: 10%;
+    top: -10vw;
+    display: flex;
+    font-size: 1.1vw;
+
+}
+
+.immagini {
+    width: 50vw;
+    padding-bottom: 2.5vh;
+}
+
+#testi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6vw;
+    align-self: flex-start;
+}
+
+#immagini {
+    padding-right: 2vw;
 }

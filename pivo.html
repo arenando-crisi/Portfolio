@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Andrea Corsini - pivó</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+  <title>Andrea Corsini - pivó</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-    <script src="libraries/p5.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="style2.css" />
+
+  <script src="libraries/p5.min.js"></script>
+</head>
+
 </html>
-<body>
-  <a id="titolone" href="index.html">andreacorsini.it</a>
-  <a id="projects" href="javascript:window.open('','_self').close();">back</a>
 
-  <div id="fascione"></div>
+<body>
+  <!------------------------------------SCROLL------------------------------------->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!------------------------------------NAVBAR------------------------------------->
+  <div id="navbar">
+    <a>andreacorsini.it</a>
+    <a>-</a>
+    <a href="" style="height: 100%;"><img src="assets\favicon.png" height="100%"></a>
+    <a>-</a>
+    <a>portfolio 2024</a>
+  </div>
+
+  <a id="works" href="index.html" style="color: white; text-decoration: none;">back</a>
+
+  <!------------------------------------HOMEPAGE------------------------------------->
+  <div id="homepage">
+    <a id="titoloneprj"><span style="position: absolute; transform: translateX(44vw); color: deeppink;">PIVÓ,</span><br>
+      <span
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 6.3vw; position: absolute; transform: translateX(18vw);">STREET
+        BASKET
+      </span><br>
+      <span style="position: absolute; transform: translateX(25vw);">
+        COMMUNITY APP</span></a>
+  </div>
 
   <div id="totale">
     <div id="immagini">
       <div style="overflow: scroll">
-        <iframe
-          src="https://player.vimeo.com/video/750725548?h=9eb2fa9913&color=ffffff&byline=0&portrait=0"
-          id="videone"
-          frameborder="0"
-        ></iframe>
-
-        <video
-          src="assets/pivo/web_1.mp4"
-          class="immagini"
-          autoplay
-          loop
-        ></video>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+            src="https://player.vimeo.com/video/750725548?h=9eb2fa9913&loop=1&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <video src="assets/pivo/web_1.mp4" class="immagini" autoplay loop></video>
         <img src="assets/pivo/pivo3.jpg" class="immagini" />
         <img src="assets/pivo/smartphones.jpg" class="immagini" />
         <img src="assets/pivo/pivo2.jpg" class="immagini" />
@@ -40,9 +59,6 @@
     </div>
     <div id="testi">
       <div id="testo">
-        <span style="font-weight: 500; font-size: 3vh"
-          >Pivó - StreetBasket community app</span
-        ><br /><br />
         Pivó is a branding and interaction design project linked to the world of
         street basketball.<br />
         It is an application that has two souls, the first is the more
@@ -56,13 +72,10 @@
         clean graphics, dirtied by street elements such as graffiti.<br />
         My role was about web design and development.<br />
         <br />
-        <a
-          href="https://arenando-crisi.github.io/pivo/"
-          style="text-decoration: underline; color: white"
-          >Here you can see the website</a
-        >
+        <a href="https://arenando-crisi.github.io/pivo/" style="text-decoration: underline; color: white">Here you can
+          see the website</a>
         <br /><br />
-        <span style="font-size: 1.5vh">
+        <span style="font-size: 0.9vw">
           in collaboration with:<br />
           Simone Cerea<br />
           Giuseppe Defilippis<br />
@@ -74,4 +87,15 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
 </body>

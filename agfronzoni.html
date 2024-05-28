@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Andrea Corsini - AG Fronzoni</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+  <title>Andrea Corsini - AG Fronzoni</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-    <script src="libraries/p5.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="style2.css" />
+
+  <script src="libraries/p5.min.js"></script>
+</head>
+
 </html>
-<body>
-  <a id="titolone" href="index.html">andreacorsini.it</a>
-  <a id="projects" href="javascript:window.open('','_self').close();">back</a>
 
-  <div id="fascione"></div>
+<body>
+  <!------------------------------------SCROLL------------------------------------->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!------------------------------------NAVBAR------------------------------------->
+  <div id="navbar">
+    <a>andreacorsini.it</a>
+    <a>-</a>
+    <a href="" style="height: 100%;"><img src="assets\favicon.png" height="100%"></a>
+    <a>-</a>
+    <a>portfolio 2024</a>
+  </div>
+
+  <a id="works" href="index.html" style="color: white; text-decoration: none;">back</a>
+
+  <!------------------------------------HOMEPAGE------------------------------------->
+  <div id="homepage">
+    <a id="titoloneprj"><span style="position: absolute; transform: translateX(28vw); color: deeppink;">AG
+        FRONZONI</span><br>
+      <span
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 6.3vw; position: absolute; transform: translateX(12vw);">UTOPIA
+        E RIVOLUZIONE
+      </span><br>
+      <span style="position: absolute; transform: translateX(29vw);">
+        IN POCHI SEGNI</span></a>
+  </div>
 
   <div id="totale">
-    <div id="immagini">
+    <div style="padding-right: 2vw;">
       <div style="overflow: scroll">
         <img src="assets/fronzoni/fronzoni1.jpg" class="immagini" />
 
@@ -32,9 +58,6 @@
     </div>
     <div id="testi">
       <div id="testo">
-        <span style="font-weight: 500; font-size: 3vh"
-          >AG Fronzoni<br />Utopia e Rivoluzione in pochi segni</span
-        ><br /><br />
         This project was born within the editorial framework of the DesignVerso
         project, a publication which, through articles and interviews, aims to
         reconstruct the figure of important communication designers.<br />
@@ -51,13 +74,10 @@
         exhibition, perhaps one of the most important works by AG Fronzoni.<br />
 
         <br />
-        <a
-          href="assets/fronzoni/AGFronzoni.pdf"
-          style="text-decoration: underline; color: white"
-          >Here you can see the full PDF</a
-        >
+        <a href="assets/fronzoni/AGFronzoni.pdf" style="text-decoration: underline; color: white">Here you can see the
+          full PDF</a>
         <br /><br />
-        <span style="font-size: 1.5vh">
+        <span style="font-size: 0.9vw">
           in collaboration with:<br />
           Simone Cerea<br />
           Matteo Visini<br />
@@ -65,4 +85,15 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
 </body>
