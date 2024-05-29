@@ -132,6 +132,18 @@ body {
     background-position: center;
 }
 
+#hometextanim1 {
+    position: relative;
+}
+
+#hometextanim2 {
+    position: relative;
+}
+
+#hometextanim3 {
+    position: relative;
+}
+
 /*--------------------------------    ABOUT    ------------------------------*/
 
 #about {
