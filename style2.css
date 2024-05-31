@@ -54,6 +54,33 @@ body {
     cursor: pointer;
 }
 
+#freccinascroll1 {
+    background-image: url("../assets/freccinascroll.png");
+    background-size: 3000% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    position: fixed;
+    top: 4vw;
+    left: 3.5vw;
+    height: 4vw;
+    width: 2vw;
+    cursor: pointer;
+}
+
+#cerchiomouse1 {
+    position: fixed;
+    height: 1.7vw;
+    width: 5vw;
+    left: 2.1vw;
+    top: 2vw;
+    z-index: 2000;
+    background-image: url("../assets/cerchio.png");
+    background-size: 3300% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    cursor: pointer;
+}
+
 #aboutscritta {
     position: fixed;
     font-size: 1.7vw;
@@ -63,6 +90,34 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
+    cursor: pointer;
+}
+
+#freccinascroll2 {
+    background-image: url("../assets/freccinascroll.png");
+    background-size: 3000% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    position: fixed;
+    bottom: 4vw;
+    right: 3.5vw;
+    height: 4vw;
+    width: 2vw;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+#cerchiomouse2 {
+    position: fixed;
+    height: 1.7vw;
+    width: 4.5vw;
+    right: 2.1vw;
+    bottom: 2vw;
+    z-index: 2000;
+    background-image: url("../assets/cerchio.png");
+    background-size: 3300% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
     cursor: pointer;
 }
 
@@ -130,18 +185,22 @@ body {
     background-image: url("assets/boccioni/boccioni1.jpg");
     background-size: cover;
     background-position: center;
+    opacity: 0;
 }
 
 #hometextanim1 {
     position: relative;
+    top: 6vw;
 }
 
 #hometextanim2 {
     position: relative;
+    top: 6vw;
 }
 
 #hometextanim3 {
     position: relative;
+    top: 6vw;
 }
 
 /*--------------------------------    ABOUT    ------------------------------*/
@@ -202,6 +261,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 0.5vw;
+    overflow: hidden;
 }
 
 #boccioni {
