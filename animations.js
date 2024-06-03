@@ -41,7 +41,7 @@ setTimeout(() => {
             opacity: 1,
             stagger: 0.01,
             duration: 0.4,
-            ease: 'power1.out',
+            ease: 'power1.inOut',
         }
     )
 
@@ -55,7 +55,7 @@ setTimeout(() => {
                 opacity: 1,
                 stagger: 0.01,
                 duration: 0.4,
-                ease: 'power1.out',
+                ease: 'power1.inOut',
             }
         )
     }, "200");
@@ -70,7 +70,7 @@ setTimeout(() => {
                 opacity: 1,
                 stagger: 0.01,
                 duration: 0.4,
-                ease: 'power1.out',
+                ease: 'power1.inOut',
             }
         )
 
@@ -79,7 +79,7 @@ setTimeout(() => {
             {
                 opacity: 1,
                 duration: 0.6,
-                ease: 'power1.out',
+                ease: 'power1.inOut',
             }
         )
     }, "400");
@@ -122,8 +122,8 @@ var prj1 = gsap.timeline({
 
 prj1.to("#boccioni", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextboccioni1 = new SplitType('div#txtboccioni1', { types: 'chars' })
@@ -133,9 +133,9 @@ prj1.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -146,9 +146,9 @@ prj1.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -162,8 +162,8 @@ var prj2 = gsap.timeline({
 
 prj2.to("#fronzoni", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextfronzoni1 = new SplitType('div#txtfronzoni1', { types: 'chars' })
@@ -173,9 +173,9 @@ prj2.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -186,9 +186,9 @@ prj2.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -202,8 +202,8 @@ var prj3 = gsap.timeline({
 
 prj3.to("#tarzan", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTexttarzan1 = new SplitType('div#txttarzan1', { types: 'chars' })
@@ -213,9 +213,9 @@ prj3.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -226,9 +226,9 @@ prj3.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -242,8 +242,8 @@ var prj4 = gsap.timeline({
 
 prj4.to("#mdb", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextmdb1 = new SplitType('div#txtmdb1', { types: 'chars' })
@@ -253,9 +253,9 @@ prj4.to(
     {
         y: -0.02 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -266,9 +266,9 @@ prj4.to(
     {
         y: -0.02 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -282,8 +282,8 @@ var prj5 = gsap.timeline({
 
 prj5.to("#isonu", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextisonu1 = new SplitType('div#txtisonu1', { types: 'chars' })
@@ -293,9 +293,9 @@ prj5.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -306,9 +306,9 @@ prj5.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -322,8 +322,8 @@ var prj6 = gsap.timeline({
 
 prj6.to("#lineo", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextlineo1 = new SplitType('div#txtlineo1', { types: 'chars' })
@@ -333,9 +333,9 @@ prj6.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -346,9 +346,9 @@ prj6.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -362,8 +362,8 @@ var prj7 = gsap.timeline({
 
 prj7.to("#pivo", {
     scale: 1.05,
-    duration: 0.2,
-    ease: 'power1.out',
+    duration: 0.25,
+    ease: 'power1.inOut',
 }, "<");
 
 const ourTextpivo1 = new SplitType('div#txtpivo1', { types: 'chars' })
@@ -373,9 +373,9 @@ prj7.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
@@ -386,11 +386,91 @@ prj7.to(
     {
         y: -0.028 * window.innerWidth,
         opacity: 1,
-        stagger: 0.005,
-        duration: 0.2,
-        ease: 'power1.out',
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
     }, "<"
 );
 
 document.querySelector("#pivo").onmouseover = () => prj7.play();
 document.querySelector("#pivo").onmouseleave = () => prj7.reverse();
+
+//animazione liw------------------------------------------------------------------------------------------------------------------
+var prj8 = gsap.timeline({
+    paused: true,
+});
+
+prj8.to("#liw", {
+    scale: 1.05,
+    duration: 0.25,
+    ease: 'power1.inOut',
+}, "<");
+
+const ourTextliw1 = new SplitType('div#txtliw1', { types: 'chars' })
+const charsliw1 = ourTextliw1.chars
+prj8.to(
+    charsliw1,
+    {
+        y: -0.028 * window.innerWidth,
+        opacity: 1,
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
+    }, "<"
+);
+
+const ourTextliw2 = new SplitType('div#txtliw2', { types: 'chars' })
+const charsliw2 = ourTextliw2.chars
+prj8.to(
+    charsliw2,
+    {
+        y: -0.028 * window.innerWidth,
+        opacity: 1,
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
+    }, "<"
+);
+
+document.querySelector("#liw").onmouseover = () => prj8.play();
+document.querySelector("#liw").onmouseleave = () => prj8.reverse();
+
+//animazione coding------------------------------------------------------------------------------------------------------------------
+var prj9 = gsap.timeline({
+    paused: true,
+});
+
+prj9.to("#coding", {
+    scale: 1.05,
+    duration: 0.25,
+    ease: 'power1.inOut',
+}, "<");
+
+const ourTextcoding1 = new SplitType('div#txtcoding1', { types: 'chars' })
+const charscoding1 = ourTextcoding1.chars
+prj9.to(
+    charscoding1,
+    {
+        y: -0.028 * window.innerWidth,
+        opacity: 1,
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
+    }, "<"
+);
+
+const ourTextcoding2 = new SplitType('div#txtcoding2', { types: 'chars' })
+const charscoding2 = ourTextcoding2.chars
+prj9.to(
+    charscoding2,
+    {
+        y: -0.028 * window.innerWidth,
+        opacity: 1,
+        stagger: 0.003,
+        duration: 0.25,
+        ease: 'power1.inOut',
+    }, "<"
+);
+
+document.querySelector("#coding").onmouseover = () => prj9.play();
+document.querySelector("#coding").onmouseleave = () => prj9.reverse();
