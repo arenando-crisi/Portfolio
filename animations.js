@@ -1,10 +1,10 @@
 
 
 //elimina la parte indesiderata del URL------------------------------------------------------------------------------------------------------------------
-window.history.replaceState('', '', '/');
+//window.history.replaceState('', '', '/');
 
 //scroll di apertura
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     var element = document.getElementById("homepage");
     element.scrollIntoView({ block: "start" });
 });
