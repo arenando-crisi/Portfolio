@@ -516,6 +516,12 @@ body {
     transform: translateY(-9.4vw);
 }
 
+@media only screen and (max-width: 700px) {
+    #titoloneprj {
+        top: 25vh;
+    }
+}
+
 #totale {
     width: 80vw;
     position: relative;
@@ -526,9 +532,22 @@ body {
 
 }
 
+@media only screen and (max-width: 700px) {
+    #totale {
+        flex-direction: column;
+        font-size: 4vw;
+    }
+}
+
 .immagini {
     width: 50vw;
     padding-bottom: 2.5vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .immagini {
+        width: 80vw;
+    }
 }
 
 #testi {
@@ -538,6 +557,39 @@ body {
     align-self: flex-start;
 }
 
+@media only screen and (max-width: 700px) {
+    #testi {
+        position: relative;
+    }
+}
+
 #immagini {
     padding-right: 2vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #immagini {
+        padding-right: 0vw;
+    }
+}
+
+#collab {
+    font-size: 0.9vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #collab {
+        font-size: 3vw;
+        padding-bottom: 10vw;
+    }
+}
+
+#titolo2 {
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #titolo2 {
+        font-size: 6vw;
+    }
 }
