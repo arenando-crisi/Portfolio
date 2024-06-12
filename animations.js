@@ -1,7 +1,5 @@
-
-
 //elimina la parte indesiderata del URL------------------------------------------------------------------------------------------------------------------
-//window.history.replaceState('', '', '/');
+window.history.replaceState('', '', '/');
 
 //scroll di apertura
 document.addEventListener("DOMContentLoaded", () => {
@@ -83,7 +81,7 @@ setTimeout(() => {
             }
         )
     }, "400");
-}, "700");
+}, "300");
 
 //animazione freccine------------------------------------------------------------------------------------------------------------------
 gsap.to("#freccinascroll1", 2, {
