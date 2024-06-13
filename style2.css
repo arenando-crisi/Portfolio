@@ -42,6 +42,7 @@
     height: 2vw;
     background: white;
     border-radius: 1vw;
+    border: solid 0.1vw deeppink;
 }
 
 .invisible {
