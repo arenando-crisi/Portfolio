@@ -485,7 +485,7 @@ const createCursorFollower = () => {
         const { x, y } = e;
         // GSAP config
         gsap.to($el, {
-            ease: "back.out(1.5)",
+            ease: "back.out(1.3)",
             x: x,
             y: y,
 
@@ -548,3 +548,11 @@ function classLeaveContact() {
     var element = document.getElementById("txtcontact");
     element.classList.add("invisible");
 }
+
+//testo scorrevole------------------------------------------------------------------------------------------------------------------
+
+gsap.to(".testochescorre", 30, {
+    x: -2 * window.innerWidth,
+    repeat: -1,
+    ease: "none",
+})

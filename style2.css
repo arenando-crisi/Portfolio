@@ -152,7 +152,7 @@ body {
     position: fixed;
     font-size: 1.8vw;
     right: 2.1vw;
-    bottom: 1.8vw;
+    bottom: 3vw;
     padding: 0.2vw;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -163,7 +163,7 @@ body {
     #aboutscritta {
         font-size: 5vw;
         right: 5vw;
-        bottom: 5vw;
+        bottom: 10vw;
     }
 }
 
@@ -173,7 +173,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0% 50%;
     position: fixed;
-    bottom: 4vw;
+    bottom: 5vw;
     right: 3.5vw;
     height: 4vw;
     width: 2vw;
@@ -182,7 +182,7 @@ body {
 
 @media only screen and (max-width: 700px) {
     #freccinascroll2 {
-        bottom: 12vw;
+        bottom: 17vw;
         right: 9vw;
         height: 10vw;
         width: 5vw;
@@ -204,7 +204,7 @@ body {
 
 .progress-container {
     position: fixed;
-    bottom: 0;
+    bottom: 1.5vw;
     z-index: 1000;
     width: 100%;
     height: 0.5vw;
@@ -214,7 +214,29 @@ body {
 
 @media only screen and (max-width: 700px) {
     .progress-container {
-        height: 1vw
+        height: 1vw;
+        bottom: 6vw;
+    }
+}
+
+#testoscorrevole {
+    position: fixed;
+    bottom: 0;
+    height: 1.5vw;
+    width: 300%;
+    border-top: 1px solid white;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 700px) {
+    #testoscorrevole {
+        font-size: 3vw;
+        height: 6vw;
     }
 }
 

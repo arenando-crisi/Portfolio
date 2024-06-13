@@ -113,3 +113,11 @@ const createCursorFollower = () => {
 if (!isTouchDevice) {
     createCursorFollower();
 }
+
+//testo scorrevole------------------------------------------------------------------------------------------------------------------
+
+gsap.to(".testochescorre", 30, {
+    x: -2 * window.innerWidth,
+    repeat: -1,
+    ease: "none",
+})
