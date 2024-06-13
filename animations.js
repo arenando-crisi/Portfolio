@@ -552,7 +552,7 @@ function classLeaveContact() {
 //testo scorrevole------------------------------------------------------------------------------------------------------------------
 
 gsap.to(".testochescorre", 60, {
-    x: -4 * window.innerWidth,
+    x: -2 * window.innerWidth,
     repeat: -1,
     ease: "none",
 })
