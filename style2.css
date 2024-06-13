@@ -6,7 +6,7 @@
     padding: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    /*cursor: none;*/
+    cursor: none;
 }
 
 *::-webkit-scrollbar {
@@ -15,6 +15,45 @@
 
 .is-inview {
     pointer-events: none;
+}
+
+#pointer {
+    position: fixed;
+    z-index: 1000000;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.normal {
+    width: 1vw;
+    height: 1vw;
+    background: deeppink;
+    border-radius: 100%;
+}
+
+.hoverprj {
+    width: 8vw;
+    height: 2vw;
+    background: white;
+    border-radius: 1vw;
+}
+
+.invisible {
+    display: none;
+}
+
+#txtprj {
+    font-size: 0.8vw;
+}
+
+#txtcontact {
+    font-size: 0.8vw;
 }
 
 body {
@@ -65,7 +104,6 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -86,7 +124,6 @@ body {
     left: 3.5vw;
     height: 4vw;
     width: 2vw;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -109,7 +146,6 @@ body {
     background-size: 3300% 100%;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    cursor: pointer;
 }
 
 #aboutscritta {
@@ -121,7 +157,6 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -143,7 +178,6 @@ body {
     height: 4vw;
     width: 2vw;
     transform: rotate(180deg);
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -166,7 +200,6 @@ body {
     background-size: 3300% 100%;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    cursor: pointer;
 }
 
 .progress-container {
@@ -293,6 +326,27 @@ body {
     font-weight: 600;
 }
 
+#aboutmobile {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #about {
+        display: none;
+    }
+
+    #aboutmobile {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        left: 5vw;
+    }
+}
+
 .rettangolo {
     background-color: #5A5A5A;
     height: 2.2vw;
@@ -306,12 +360,20 @@ body {
     margin-bottom: 0.5vw;
 }
 
+@media only screen and (max-width: 700px) {
+    .rettangolocontact {
+        height: 5vw;
+    }
+}
+
 .rettangolocontact:hover {
     background-color: deeppink;
 }
 
-.tasticontatto {
-    cursor: pointer;
+@media only screen and (max-width: 700px) {
+    .tasticontatto {
+        padding-top: 10vw;
+    }
 }
 
 /*--------------------------------    PROGETTI    ------------------------------*/
@@ -346,7 +408,6 @@ body {
     height: 20vw;
     font-size: 0.9vw;
     position: relative;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -456,13 +517,13 @@ body {
 @media only screen and (max-width: 700px) {
     #boccioni {
         top: -4vw;
-        left: 10vw;
+        left: 5vw;
         margin-top: 0vw;
     }
 
     #fronzoni {
         top: -2vw;
-        left: 10vw;
+        left: 14vw;
     }
 
     #tarzan {
@@ -472,7 +533,7 @@ body {
 
     #mdb {
         top: -2vw;
-        left: 10vw;
+        left: 3vw;
     }
 
     #isonu {
@@ -482,12 +543,12 @@ body {
 
     #lineo {
         top: 8vw;
-        left: 10vw;
+        left: 8vw;
     }
 
     #pivo {
         top: 18vw;
-        left: 10vw;
+        left: 18vw;
     }
 
     #liw {
@@ -497,7 +558,7 @@ body {
 
     #coding {
         top: 33vw;
-        left: 18vw;
+        left: 15vw;
     }
 }
 

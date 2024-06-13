@@ -9,11 +9,15 @@
     <link rel="icon" type="image/x-icon" href="assets\favicon.png" />
 
     <link rel="stylesheet" href="style2.css" />
-
-    <script src="libraries/p5.min.js"></script>
 </head>
 
 <body>
+    <!------------------------------------PUNTATORE MOUSE------------------------------------->
+    <div id="pointer" class="normal">
+        <a class="invisible" id="txtcontact">Let's go!</a>
+        <a class="invisible" id="txtprj">Discover more!</a>
+    </div>
+
     <!------------------------------------SCROLL------------------------------------->
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -79,29 +83,32 @@
                     <span style="color: deeppink;">TOUCH</span></a>
                 <div style="display: flex;">
                     <div class="tasticontatto" onclick="location.href='mailto: iam@andreacorsini.it'"
-                        style="margin-right: 0.4vw; width: 100%;">
+                        style="margin-right: 0.4vw; width: 100%;" onmouseenter="classHoverContact()"
+                        onmouseleave="classLeaveContact()">
                         <div class="rettangolocontact"></div>
                         <a><span><span style="color: deeppink;">E-MAIL</span> ME</span><br><span
                                 style="font-weight: 100;">iam@andreacorsini.it</span></a>
                     </div>
 
                     <div class="tasticontatto" onclick="location.href='https://t.me/arenando_crisi'"
-                        style="margin-right: 0.4vw; width: 100%;">
+                        style="margin-right: 0.4vw; width: 100%;" onmouseenter="classHoverContact()"
+                        onmouseleave="classLeaveContact()">
                         <div class="rettangolocontact"></div>
                         <a><span>TEXT ME ON <span style="color: deeppink;">TELEGRAM</span></span><br><span
                                 style="font-weight: 100;">arenando_crisi</span></a>
                     </div>
 
                     <div class="tasticontatto" onclick="window.location.href='https://www.github.com/arenando-crisi'"
-                        style="width: 100%; margin-right: 0.4vw;">
+                        style="width: 100%; margin-right: 0.4vw;" onmouseenter="classHoverContact()"
+                        onmouseleave="classLeaveContact()">
                         <div class="rettangolocontact"></div>
                         <a><span>TAKE A LOOK AT MY <span style="color: deeppink;">GITHUB</span></span><br><span
                                 style="font-weight: 100;">arenando_crisi</span></a>
                     </div>
 
                     <div class="tasticontatto"
-                        onclick="window.location.href='https://www.linkedin.com/in/arenando-crisi'"
-                        style="width: 100%;">
+                        onclick="window.location.href='https://www.linkedin.com/in/arenando-crisi'" style="width: 100%;"
+                        onmouseenter="classHoverContact()" onmouseleave="classLeaveContact()">
                         <div class="rettangolocontact"></div>
                         <a><span>HERE IS MY <span style="color: deeppink;">LINKEDIN</span></span><br><span
                                 style="font-weight: 100;">Andrea Corsini</span></a>
@@ -111,6 +118,41 @@
         </div>
 
 
+    </div>
+
+    <div id="aboutmobile">
+        <a style="text-align: end; font-size: 6.3vw; font-weight: 400; line-height: 6.5vw;">LET'S KEEP IN
+            <span style="color: deeppink; font-family: 'Cormorant Garamond', serif; font-size: 7vw;">TOUCH</span></a>
+        <div style="display: flex; flex-direction: column;">
+            <div class="tasticontatto" onclick="location.href='mailto: iam@andreacorsini.it'"
+                style="margin-right: 0.4vw; width: 100%;">
+                <div class="rettangolocontact"></div>
+                <a><span><span style="color: deeppink;">E-MAIL</span> ME</span><br><span
+                        style="font-weight: 100; font-family: 'Cormorant Garamond', serif;">iam@andreacorsini.it</span></a>
+            </div>
+
+            <div class="tasticontatto" onclick="location.href='https://t.me/arenando_crisi'"
+                style="margin-right: 0.4vw; width: 100%;">
+                <div class="rettangolocontact"></div>
+                <a><span>TEXT ME ON <span style="color: deeppink;">TELEGRAM</span></span><br><span
+                        style="font-weight: 100; font-family: 'Cormorant Garamond', serif;">arenando_crisi</span></a>
+            </div>
+
+            <div class="tasticontatto" onclick="window.location.href='https://www.github.com/arenando-crisi'"
+                style="width: 100%; margin-right: 0.4vw;">
+                <div class="rettangolocontact"></div>
+                <a><span>TAKE A LOOK AT MY <span style="color: deeppink;">GITHUB</span></span><br><span
+                        style="font-weight: 100; font-family: 'Cormorant Garamond', serif;">arenando_crisi</span></a>
+            </div>
+
+            <div class="tasticontatto" onclick="window.location.href='https://www.linkedin.com/in/arenando-crisi'"
+                style="width: 100%;">
+                <div class="rettangolocontact"></div>
+                <a><span>HERE IS MY <span style="color: deeppink;">LINKEDIN</span></span><br><span
+                        style="font-weight: 100; font-family: 'Cormorant Garamond', serif;">Andrea Corsini</span></a>
+
+            </div>
+        </div>
     </div>
 
     <!------------------------------------HOMEPAGE------------------------------------->
@@ -143,7 +185,7 @@
     <div id="projects">
         <div data-scroll data-scroll-speed="-0.05">
             <div id="boccioni" class="progetto" onclick="location.href='controsenso.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtboccioni1">
                     <a><span style="font-weight: 600;">CONTROSENSO</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">amaro rumore di un addio</span></a>
@@ -163,7 +205,7 @@
 
         <div data-scroll data-scroll-speed="0.05">
             <div id="fronzoni" class="progetto" onclick="location.href='agfronzoni.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtfronzoni1">
                     <a><span style="font-weight: 600;">AG FRONZONI</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">utopia e rivoluzione in pochi segni</span></a>
@@ -182,7 +224,7 @@
 
         <div data-scroll data-scroll-speed="0.02">
             <div id="tarzan" class="progetto" onclick="location.href='tarzan.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txttarzan1">
                     <a><span style="font-weight: 600;">TARZAN</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">fire run</span></a>
@@ -200,7 +242,7 @@
 
         <div data-scroll data-scroll-speed="-0.01">
             <div id="mdb" class="progetto" onclick="location.href='milanodabere.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtmdb1">
                     <a><span style="font-weight: 600;">MILANO DA BERE</span><br><span
                             style="font-weight: 100; font-size: 0.9vw; "></span></a>
@@ -217,7 +259,7 @@
 
         <div data-scroll data-scroll-speed="-0.04">
             <div id="isonu" class="progetto" onclick="location.href='isonu.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtisonu1">
                     <a><span style="font-weight: 600;">I'S ON U</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">eyes
@@ -238,7 +280,7 @@
 
         <div data-scroll data-scroll-speed="-0.07">
             <div id="lineo" class="progetto" onclick="location.href='lineo.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtlineo1">
                     <a><span style="font-weight: 600;">LINEO</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">chirolab</span></a>
@@ -256,7 +298,7 @@
 
         <div data-scroll data-scroll-speed="0.03">
             <div id="pivo" class="progetto" onclick="location.href='pivo.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtpivo1">
                     <a><span style="font-weight: 600;">PIVÓ</span><br><span
                             style="font-weight: 100 ; font-size: 0.9vw;">streetbasket community app</span></a>
@@ -275,7 +317,7 @@
 
         <div data-scroll data-scroll-speed="0.06">
             <div id="liw" class="progetto" onclick="location.href='lostinwoods.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtliw1">
                     <a><span style="font-weight: 600;">LOST IN THE WOODS</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">an hike through the term about reforestation
@@ -296,7 +338,7 @@
 
         <div data-scroll data-scroll-speed="-0.02">
             <div id="coding" class="progetto" onclick="location.href='coding.html'">
-                <div class="immagine"></div>
+                <div class="immagine" onmouseenter="classHoverPrj()" onmouseout="classLeavePrj()"></div>
                 <div class="description" id="txtcoding1">
                     <a><span style="font-weight: 600;">CREATIVE CODING</span><br><span
                             style="font-weight: 100; font-size: 0.9vw;">some random p5.js experiments</span></a>

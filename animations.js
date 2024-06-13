@@ -472,3 +472,79 @@ prj9.to(
 
 document.querySelector("#coding").onmouseover = () => prj9.play();
 document.querySelector("#coding").onmouseleave = () => prj9.reverse();
+
+//animazione mouse------------------------------------------------------------------------------------------------------------------
+
+const isTouchDevice = 'ontouchstart' in window;
+const createCursorFollower = () => {
+    const $el = document.querySelector('#pointer');
+    // Each time the mouse coordinates are updated,
+    // we need to pass the values to gsap in order
+    // to animate the element
+    window.addEventListener('mousemove', (e) => {
+        const { x, y } = e;
+        // GSAP config
+        gsap.to($el, {
+            ease: "back.out(1.5)",
+            x: x,
+            y: y,
+
+        });
+    });
+    // Hidding the cursor element when the mouse cursor
+    // is moved out of the page
+    document.addEventListener('mouseleave', (e) => {
+        gsap.to($el, {
+            duration: 0.7,
+            opacity: 0,
+        });
+    });
+
+    document.addEventListener('mouseenter', (e) => {
+        gsap.to($el, {
+            duration: 0.7,
+            opacity: 1,
+        });
+    });
+};
+// Only invoke the function if isn't a touch device
+if (!isTouchDevice) {
+    createCursorFollower();
+}
+
+function classHoverPrj() {
+    var element = document.getElementById("pointer");
+    element.classList.add("hoverprj");
+    element.classList.remove("normal");
+
+    var element = document.getElementById("txtprj");
+    element.classList.remove("invisible");
+}
+
+function classLeavePrj() {
+    var element = document.getElementById("pointer");
+    element.classList.remove("hoverprj");
+    element.classList.add("normal");
+
+    var element = document.getElementById("txtprj");
+    element.classList.add("invisible");
+}
+
+function classHoverContact() {
+    console.log("brum")
+    var element = document.getElementById("pointer");
+    element.classList.add("hoverprj");
+    element.classList.remove("normal");
+
+    var element = document.getElementById("txtcontact");
+    element.classList.remove("invisible");
+}
+
+function classLeaveContact() {
+    var element = document.getElementById("pointer");
+    element.classList.remove("hoverprj");
+    element.classList.add("normal");
+
+    var element = document.getElementById("txtcontact");
+    element.classList.add("invisible");
+}
