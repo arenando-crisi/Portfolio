@@ -24,7 +24,7 @@ function worksScroll() {
 }
 
 function aboutScroll() {
-    var element = document.getElementById("about");
+    var element = document.getElementById("aboutanchor");
     element.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
