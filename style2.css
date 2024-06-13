@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: none;
 }
 
 .normal {
@@ -310,16 +311,60 @@ body {
     }
 }
 
+@keyframes gifanimata {
+    0% {
+        background-image: url("assets/boccioni/boccioni1.jpg");
+    }
+
+    10% {
+        background-image: url("assets/lineo/09.jpg");
+    }
+
+    20% {
+        background-image: url("assets/franco/franco1.jpg");
+    }
+
+    30% {
+        background-image: url("assets/franco/cc3.jpg");
+    }
+
+    40% {
+        background-image: url("assets/fronzoni/fronzoni2.jpg");
+    }
+
+    50% {
+        background-image: url("assets/liw/liw1.jpg");
+    }
+
+    60% {
+        background-image: url("assets/mdb/mdb2.jpg");
+    }
+
+    70% {
+        background-image: url("assets/pivo/pivo3.jpg");
+    }
+
+    80% {
+        background-image: url("assets/tarzan/tarzan2.jpg");
+    }
+
+    90% {
+        background-image: url("assets/tarzan/tarzan3.jpg");
+    }
+}
+
 #gif {
     color: transparent;
     display: inline-block;
     height: 4.8vw;
     position: relative;
     top: 0.8vw;
-    background-image: url("assets/boccioni/boccioni1.jpg");
-    background-size: cover;
-    background-position: center;
     opacity: 0;
+    background-size: 100%;
+    animation: gifanimata;
+    animation-duration: 200s;
+    background-position: center;
+    animation-iteration-count: infinite;
 }
 
 #hometextanim1 {
